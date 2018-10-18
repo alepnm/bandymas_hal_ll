@@ -1,0 +1,2107 @@
+# depslib dependency file v1.0
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
+	"stm32f0xx_ll_adc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537999946 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_adc.h
+	"stm32f0xx.h"
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f0xx.h
+	"stm32f030x6.h"
+	"stm32f030x8.h"
+	"stm32f031x6.h"
+	"stm32f038xx.h"
+	"stm32f042x6.h"
+	"stm32f048xx.h"
+	"stm32f051x8.h"
+	"stm32f058xx.h"
+	"stm32f070x6.h"
+	"stm32f070xb.h"
+	"stm32f071xb.h"
+	"stm32f072xb.h"
+	"stm32f078xx.h"
+	"stm32f091xc.h"
+	"stm32f098xx.h"
+	"stm32f030xc.h"
+	"stm32f0xx_hal.h"
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\system_stm32f0xx.h
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x8.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f031x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f038xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f042x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f048xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f051x8.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f058xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f071xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f072xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f078xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f091xc.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f098xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030xc.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal.h
+	"stm32f0xx_hal_conf.h"
+
+1537996008 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_hal_conf.h
+	"main.h"
+	"stm32f0xx_hal_rcc.h"
+	"stm32f0xx_hal_exti.h"
+	"stm32f0xx_hal_gpio.h"
+	"stm32f0xx_hal_dma.h"
+	"stm32f0xx_hal_cortex.h"
+	"stm32f0xx_hal_adc.h"
+	"stm32f0xx_hal_can.h"
+	"stm32f0xx_hal_cec.h"
+	"stm32f0xx_hal_comp.h"
+	"stm32f0xx_hal_crc.h"
+	"stm32f0xx_hal_dac.h"
+	"stm32f0xx_hal_flash.h"
+	"stm32f0xx_hal_i2c.h"
+	"stm32f0xx_hal_i2s.h"
+	"stm32f0xx_hal_irda.h"
+	"stm32f0xx_hal_iwdg.h"
+	"stm32f0xx_hal_pcd.h"
+	"stm32f0xx_hal_pwr.h"
+	"stm32f0xx_hal_rtc.h"
+	"stm32f0xx_hal_smartcard.h"
+	"stm32f0xx_hal_smbus.h"
+	"stm32f0xx_hal_spi.h"
+	"stm32f0xx_hal_tim.h"
+	"stm32f0xx_hal_tsc.h"
+	"stm32f0xx_hal_uart.h"
+	"stm32f0xx_hal_usart.h"
+	"stm32f0xx_hal_wwdg.h"
+
+1538256184 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\inc\main.h
+	"stm32f0xx_ll_adc.h"
+	"stm32f0xx_ll_i2c.h"
+	"stm32f0xx_ll_crs.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32f0xx_ll_system.h"
+	"stm32f0xx_ll_exti.h"
+	"stm32f0xx_ll_cortex.h"
+	"stm32f0xx_ll_utils.h"
+	"stm32f0xx_ll_pwr.h"
+	"stm32f0xx_ll_dma.h"
+	"stm32f0xx_ll_rtc.h"
+	"stm32f0xx_ll_spi.h"
+	"stm32f0xx_ll_tim.h"
+	"stm32f0xx_ll_usart.h"
+	"stm32f0xx_ll_gpio.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crs.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rcc.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_bus.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_system.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_exti.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_cortex.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_utils.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_pwr.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dma.h
+	"stm32f0xx.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_gpio.h
+	"stm32f0xx.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_rcc_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_def.h
+	"stm32f0xx.h"
+	"Legacy/stm32_hal_legacy.h"
+	<stdio.h>
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\legacy\stm32_hal_legacy.h
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_gpio_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_dma_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cortex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_adc_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_can.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cec.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_comp.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_crc_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_dac_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_flash_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_i2c_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2s.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_irda_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_iwdg.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_pcd_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_pwr_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_rtc_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_smartcard_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smbus.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_spi_ex.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986692 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_tim_ex.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tsc.h
+	"stm32f0xx_hal_def.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_uart_ex.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_usart_ex.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_wwdg.h
+	"stm32f0xx_hal_def.h"
+
+1537996008 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_comp.c
+	"stm32f0xx_ll_comp.h"
+	"stm32_assert.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_comp.h
+	"stm32f0xx.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crc.c
+	"stm32f0xx_ll_crc.h"
+	"stm32_assert.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crc.h
+	"stm32f0xx.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crs.c
+	"stm32f0xx_ll_crs.h"
+	"stm32f0xx_ll_bus.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dac.c
+	"stm32f0xx_ll_dac.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dac.h
+	"stm32f0xx.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dma.c
+	"stm32f0xx_ll_dma.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_exti.c
+	"stm32f0xx_ll_exti.h"
+	"stm32_assert.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_gpio.c
+	"stm32f0xx_ll_gpio.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_i2c.c
+	"stm32f0xx_ll_i2c.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_i2c.h
+	"stm32f0xx.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_pwr.c
+	"stm32f0xx_ll_pwr.h"
+	"stm32f0xx_ll_bus.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rcc.c
+	"stm32f0xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rtc.c
+	"stm32f0xx_ll_rtc.h"
+	"stm32f0xx_ll_cortex.h"
+	"stm32_assert.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rtc.h
+	"stm32f0xx.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_spi.c
+	"stm32f0xx_ll_spi.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1538255926 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_spi.h
+	"stm32f0xx.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_tim.c
+	"stm32f0xx_ll_tim.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_tim.h
+	"stm32f0xx.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_usart.c
+	"stm32f0xx_ll_usart.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537986694 c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_usart.h
+	"stm32f0xx.h"
+
+1537986694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_utils.c
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_utils.h"
+	"stm32f0xx_ll_system.h"
+	"stm32_assert.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\src\system_stm32f0xx.c
+	"stm32f0xx.h"
+
+1538481810 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\src\main.c
+	"main.h"
+	"software.h"
+	"nextion.h"
+
+1538396403 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
+	"stm32f0xx.h"
+	"stm32f0xx_it.h"
+	"defs.h"
+	"stm32f0xx_ll_usart.h"
+	"user_mb_app.h"
+
+1537996008 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_it.h
+	"stm32f0xx_ll_system.h"
+	"stm32f0xx_ll_gpio.h"
+	"stm32f0xx_ll_exti.h"
+	"main.h"
+
+1537986702 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
+
+1537776398 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\nextion.h
+
+1537781373 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon.h
+
+1537781951 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\nextion\nextion.c
+	"nextion.h"
+
+1537780390 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\nextion\nextion.h
+
+1537859474 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\unicon.h
+	"pheriph.h"
+
+1537859474 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\unicon.c
+	"unicon.h"
+
+1537859474 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph.h
+	"../../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32f0xx_ll_adc.h"
+	"stm32f0xx_ll_gpio.h"
+	"stm32f0xx_ll_tim.h"
+	"stm32f0xx_ll_usart.h"
+	"stm32f0xx_ll_spi.h"
+	"stm32f0xx_ll_rtc.h"
+
+1537788647 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\phriph_spi.c
+	"pheriph.h"
+
+1537787898 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\phriph_tim.c
+	"pheriph.h"
+
+1537788560 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\phriph_uart.c
+	"pheriph.h"
+
+1537788452 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\phriph_gpio.c
+	"pheriph.h"
+
+1537797572 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_gpio.c
+	"pheriph.h"
+
+1537856410 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_tim.c
+	"pheriph.h"
+
+1537788560 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_uart.c
+	"pheriph.h"
+
+1537797694 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_spi.c
+	"pheriph.h"
+
+1537793604 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_gpio.h
+	"pheriph.h"
+
+1537789374 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_spi.h
+	"pheriph.h"
+
+1537789772 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_tim.h
+	"pheriph.h"
+
+1537789972 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_usart.h
+	"pheriph.h"
+
+1537794533 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_rtc.h
+	"pheriph.h"
+
+1537796107 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\libs\systick\systick.c
+	"unicon.h"
+	"systick.h"
+
+1537251678 c:\users\alexanderpo\desktop\bandymas_hal_ll\libs\systick\systick.h
+
+1537797498 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_adc.h
+	"pheriph.h"
+
+1537855892 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_adc.c
+	"pheriph.h"
+
+1537797788 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_rtc.c
+	"pheriph.h"
+
+1537797650 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\unicon\pheriph_usart.c
+	"pheriph.h"
+
+1538742851 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\stepper\stepper.c
+	"stepper.h"
+	"hardware.h"
+	"user_mb_app.h"
+	"M25AAxx.h"
+
+1538742851 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\board\stepper\stepper.h
+	"defs.h"
+	"main.h"
+	"stm32_assert.h"
+
+1538489065 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\src\software.c
+	"software.h"
+	"M25AAxx.h"
+
+1538742885 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\inc\software.h
+	"stepper.h"
+	"mb.h"
+	"user_mb_app.h"
+
+1538482210 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\inc\defs.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	<stdlib.h>
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdiag.c
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbascii.h"
+	"mbframe.h"
+	"mbcrc.h"
+	"mbport.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.h
+	"stepper.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mb.h
+	"port.h"
+	"mbport.h"
+	"mbproto.h"
+	"mbutils.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbport.h
+	"port.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbproto.h
+	"mb.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbutils.h
+	"mb.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbconfig.h
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.h
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbframe.h
+	"mb.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.h
+	"port.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfunccoils.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\inc\user_mb_app.h
+	"mb.h"
+	"mbconfig.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdisc.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncholding.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncinput.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncother.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbutils.c
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	"port.h"
+	"mb.h"
+	"mbproto.h"
+	"user_mb_app.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\mb.c
+	<stdlib.h>
+	<string.h>
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbfunc.h"
+	"mbport.h"
+	"mbrtu.h"
+	"mbascii.h"
+	"mbtcp.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbfunc.h
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.h
+	"mb.h"
+
+1537986698 c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.h
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.c
+	"port.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbtcp.h"
+	"mbframe.h"
+	"mbport.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.c
+	"port.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portevent.c
+	"mb.h"
+	"mbport.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\porttimer.c
+	"port.h"
+	"mb.h"
+	"mbport.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portserial.c
+	"port.h"
+	"mb.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\src\user_mb_app.c
+	"user_mb_app.h"
+
+1537986698 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbrtu.h"
+	"mbframe.h"
+	"mbcrc.h"
+	"mbport.h"
+	"stepper.h"
+
+1538742272 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.c
+	"M25AAxx.h"
+	"hardware.h"
+	"stepper.h"
+
+1537986682 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.h
+	<stdint.h>
+
+1538338162 source:d:\alex\desktop\bandymas_hal_ll\bsp\board\stepper\stepper.c
+	"stepper.h"
+	"user_mb_app.h"
+	"M25AAxx.h"
+
+1538336659 d:\alex\desktop\bandymas_hal_ll\bsp\board\stepper\stepper.h
+	"defs.h"
+	"main.h"
+	"stm32_assert.h"
+
+1538340563 d:\alex\desktop\bandymas_hal_ll\low_layer\core\inc\defs.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	<stdlib.h>
+
+1537992408 d:\alex\desktop\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rcc.h
+	"stm32f0xx.h"
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f0xx.h
+	"stm32f030x6.h"
+	"stm32f030x8.h"
+	"stm32f031x6.h"
+	"stm32f038xx.h"
+	"stm32f042x6.h"
+	"stm32f048xx.h"
+	"stm32f051x8.h"
+	"stm32f058xx.h"
+	"stm32f070x6.h"
+	"stm32f070xb.h"
+	"stm32f071xb.h"
+	"stm32f072xb.h"
+	"stm32f078xx.h"
+	"stm32f091xc.h"
+	"stm32f098xx.h"
+	"stm32f030xc.h"
+	"stm32f0xx_hal.h"
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\system_stm32f0xx.h
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x8.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f031x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f038xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f042x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f048xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f051x8.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f058xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f071xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f072xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f078xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f091xc.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f098xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030xc.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal.h
+	"stm32f0xx_hal_conf.h"
+
+1537992408 d:\alex\desktop\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_hal_conf.h
+	"main.h"
+	"stm32f0xx_hal_rcc.h"
+	"stm32f0xx_hal_exti.h"
+	"stm32f0xx_hal_gpio.h"
+	"stm32f0xx_hal_dma.h"
+	"stm32f0xx_hal_cortex.h"
+	"stm32f0xx_hal_adc.h"
+	"stm32f0xx_hal_can.h"
+	"stm32f0xx_hal_cec.h"
+	"stm32f0xx_hal_comp.h"
+	"stm32f0xx_hal_crc.h"
+	"stm32f0xx_hal_dac.h"
+	"stm32f0xx_hal_flash.h"
+	"stm32f0xx_hal_i2c.h"
+	"stm32f0xx_hal_i2s.h"
+	"stm32f0xx_hal_irda.h"
+	"stm32f0xx_hal_iwdg.h"
+	"stm32f0xx_hal_pcd.h"
+	"stm32f0xx_hal_pwr.h"
+	"stm32f0xx_hal_rtc.h"
+	"stm32f0xx_hal_smartcard.h"
+	"stm32f0xx_hal_smbus.h"
+	"stm32f0xx_hal_spi.h"
+	"stm32f0xx_hal_tim.h"
+	"stm32f0xx_hal_tsc.h"
+	"stm32f0xx_hal_uart.h"
+	"stm32f0xx_hal_usart.h"
+	"stm32f0xx_hal_wwdg.h"
+
+1538252583 d:\alex\desktop\bandymas_hal_ll\low_layer\core\inc\main.h
+	"stm32f0xx_ll_adc.h"
+	"stm32f0xx_ll_i2c.h"
+	"stm32f0xx_ll_crs.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32f0xx_ll_system.h"
+	"stm32f0xx_ll_exti.h"
+	"stm32f0xx_ll_cortex.h"
+	"stm32f0xx_ll_utils.h"
+	"stm32f0xx_ll_pwr.h"
+	"stm32f0xx_ll_dma.h"
+	"stm32f0xx_ll_rtc.h"
+	"stm32f0xx_ll_spi.h"
+	"stm32f0xx_ll_tim.h"
+	"stm32f0xx_ll_usart.h"
+	"stm32f0xx_ll_gpio.h"
+
+1537996346 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_adc.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_i2c.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crs.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_bus.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_system.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_exti.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_cortex.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_utils.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_pwr.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dma.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rtc.h
+	"stm32f0xx.h"
+
+1538252324 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_spi.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_tim.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_usart.h
+	"stm32f0xx.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_gpio.h
+	"stm32f0xx.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_rcc_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_def.h
+	"stm32f0xx.h"
+	"Legacy/stm32_hal_legacy.h"
+	<stdio.h>
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\legacy\stm32_hal_legacy.h
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_gpio_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_dma_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cortex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_adc_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_can.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cec.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_comp.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_crc_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_dac_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_flash_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_i2c_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2s.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_irda_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_iwdg.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_pcd_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_pwr_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_rtc_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_smartcard_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smbus.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_spi_ex.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_tim_ex.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tsc.h
+	"stm32f0xx_hal_def.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_uart_ex.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_usart_ex.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_wwdg.h
+	"stm32f0xx_hal_def.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\inc\user_mb_app.h
+	"mb.h"
+	"mbconfig.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mb.h
+	"port.h"
+	"mbport.h"
+	"mbproto.h"
+	"mbutils.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.h
+	"stepper.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbport.h
+	"port.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbproto.h
+	"mb.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbutils.h
+	"mb.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbconfig.h
+
+1537983082 d:\alex\desktop\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.h
+	<stdint.h>
+
+1538260056 source:d:\alex\desktop\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.c
+	"M25AAxx.h"
+	"stepper.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
+	"stm32f0xx_ll_adc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_comp.c
+	"stm32f0xx_ll_comp.h"
+	"stm32_assert.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_comp.h
+	"stm32f0xx.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crc.c
+	"stm32f0xx_ll_crc.h"
+	"stm32_assert.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crc.h
+	"stm32f0xx.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crs.c
+	"stm32f0xx_ll_crs.h"
+	"stm32f0xx_ll_bus.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dac.c
+	"stm32f0xx_ll_dac.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dac.h
+	"stm32f0xx.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dma.c
+	"stm32f0xx_ll_dma.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_exti.c
+	"stm32f0xx_ll_exti.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_gpio.c
+	"stm32f0xx_ll_gpio.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_i2c.c
+	"stm32f0xx_ll_i2c.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_pwr.c
+	"stm32f0xx_ll_pwr.h"
+	"stm32f0xx_ll_bus.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rcc.c
+	"stm32f0xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rtc.c
+	"stm32f0xx_ll_rtc.h"
+	"stm32f0xx_ll_cortex.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_spi.c
+	"stm32f0xx_ll_spi.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_tim.c
+	"stm32f0xx_ll_tim.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_usart.c
+	"stm32f0xx_ll_usart.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\alex\desktop\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_utils.c
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_utils.h"
+	"stm32f0xx_ll_system.h"
+	"stm32_assert.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbascii.h"
+	"mbframe.h"
+	"mbcrc.h"
+	"mbport.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.h
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbframe.h
+	"mb.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.h
+	"port.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfunccoils.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdiag.c
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdisc.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncholding.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncinput.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncother.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbutils.c
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	"port.h"
+	"mb.h"
+	"mbproto.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\mb.c
+	<stdlib.h>
+	<string.h>
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbfunc.h"
+	"mbport.h"
+	"mbrtu.h"
+	"mbascii.h"
+	"mbtcp.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbfunc.h
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.h
+	"mb.h"
+
+1537983098 d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.h
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.c
+	"port.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbrtu.h"
+	"mbframe.h"
+	"mbcrc.h"
+	"mbport.h"
+	"stepper.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbtcp.h"
+	"mbframe.h"
+	"mbport.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.c
+	"port.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portevent.c
+	"mb.h"
+	"mbport.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portserial.c
+	"port.h"
+	"mb.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\porttimer.c
+	"port.h"
+	"mb.h"
+	"mbport.h"
+
+1538336824 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\src\main.c
+	"main.h"
+	"software.h"
+
+1538263570 d:\alex\desktop\bandymas_hal_ll\low_layer\core\inc\software.h
+	"stepper.h"
+	"mb.h"
+	"user_mb_app.h"
+
+1538333985 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\src\software.c
+	"software.h"
+
+1538340563 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
+	"stm32f0xx.h"
+	"stm32f0xx_it.h"
+	"defs.h"
+	"stm32f0xx_ll_usart.h"
+	"user_mb_app.h"
+
+1537992408 d:\alex\desktop\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_it.h
+	"stm32f0xx_ll_system.h"
+	"stm32f0xx_ll_gpio.h"
+	"stm32f0xx_ll_exti.h"
+	"main.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\src\system_stm32f0xx.c
+	"stm32f0xx.h"
+
+1537983098 source:d:\alex\desktop\bandymas_hal_ll\low_layer\core\src\user_mb_app.c
+	"user_mb_app.h"
+
+1537983102 source:d:\alex\desktop\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
+
+1538474463 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.c
+	"nextion.h"
+
+1538473079 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.h
+	"defs.h"
+
+1538742620 source:c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\hardware.c
+	"hardware.h"
+
+1538742620 c:\users\alexanderpo\desktop\bandymas_hal_ll\bsp\hardware.h
+	"defs.h"
+	"main.h"
+
+1539036202 source:d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.c
+	"stepper.h"
+	"hardware.h"
+	"user_mb_app.h"
+	"M25AAxx.h"
+
+1538767482 d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.h
+	"hardware.h"
+	"stm32_assert.h"
+
+1538759681 d:\projects\bandymas_hal_ll\low_layer\core\inc\defs.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	<stdlib.h>
+
+1539026276 d:\projects\bandymas_hal_ll\low_layer\core\inc\main.h
+	"stm32f0xx_ll_adc.h"
+	"stm32f0xx_ll_i2c.h"
+	"stm32f0xx_ll_crs.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32f0xx_ll_system.h"
+	"stm32f0xx_ll_exti.h"
+	"stm32f0xx_ll_cortex.h"
+	"stm32f0xx_ll_utils.h"
+	"stm32f0xx_ll_pwr.h"
+	"stm32f0xx_ll_dma.h"
+	"stm32f0xx_ll_rtc.h"
+	"stm32f0xx_ll_spi.h"
+	"stm32f0xx_ll_tim.h"
+	"stm32f0xx_ll_usart.h"
+	"stm32f0xx_ll_gpio.h"
+
+1537996346 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_adc.h
+	"stm32f0xx.h"
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f0xx.h
+	"stm32f030x6.h"
+	"stm32f030x8.h"
+	"stm32f031x6.h"
+	"stm32f038xx.h"
+	"stm32f042x6.h"
+	"stm32f048xx.h"
+	"stm32f051x8.h"
+	"stm32f058xx.h"
+	"stm32f070x6.h"
+	"stm32f070xb.h"
+	"stm32f071xb.h"
+	"stm32f072xb.h"
+	"stm32f078xx.h"
+	"stm32f091xc.h"
+	"stm32f098xx.h"
+	"stm32f030xc.h"
+	"stm32f0xx_hal.h"
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\system_stm32f0xx.h
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x8.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f031x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f038xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f042x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f048xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f051x8.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f058xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070x6.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f071xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f072xb.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f078xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f091xc.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f098xx.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983082 d:\projects\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030xc.h
+	"core_cm0.h"
+	"system_stm32f0xx.h"
+	<stdint.h>
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal.h
+	"stm32f0xx_hal_conf.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_i2c.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crs.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rcc.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_bus.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_system.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_exti.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_cortex.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_utils.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_pwr.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dma.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rtc.h
+	"stm32f0xx.h"
+
+1538252326 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_spi.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_tim.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_usart.h
+	"stm32f0xx.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_gpio.h
+	"stm32f0xx.h"
+
+1539026275 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
+
+1539035118 d:\projects\bandymas_hal_ll\bsp\hardware.h
+	"defs.h"
+	"main.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\inc\user_mb_app.h
+	"mb.h"
+	"mbconfig.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mb.h
+	"port.h"
+	"mbport.h"
+	"mbproto.h"
+	"mbutils.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.h
+	"stepper.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbport.h
+	"port.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbproto.h
+	"mb.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbutils.h
+	"mb.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbconfig.h
+
+1537983082 d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.h
+	<stdint.h>
+
+1538767517 source:d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.c
+	"M25AAxx.h"
+	"hardware.h"
+	"stepper.h"
+
+1538470864 source:d:\projects\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.c
+	"nextion.h"
+
+1538469480 d:\projects\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.h
+	"defs.h"
+
+1539035213 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
+	"hardware.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
+	"stm32f0xx_ll_adc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_comp.c
+	"stm32f0xx_ll_comp.h"
+	"stm32_assert.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_comp.h
+	"stm32f0xx.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crc.c
+	"stm32f0xx_ll_crc.h"
+	"stm32_assert.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crc.h
+	"stm32f0xx.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crs.c
+	"stm32f0xx_ll_crs.h"
+	"stm32f0xx_ll_bus.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dac.c
+	"stm32f0xx_ll_dac.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dac.h
+	"stm32f0xx.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dma.c
+	"stm32f0xx_ll_dma.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_exti.c
+	"stm32f0xx_ll_exti.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_gpio.c
+	"stm32f0xx_ll_gpio.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_i2c.c
+	"stm32f0xx_ll_i2c.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_pwr.c
+	"stm32f0xx_ll_pwr.h"
+	"stm32f0xx_ll_bus.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rcc.c
+	"stm32f0xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rtc.c
+	"stm32f0xx_ll_rtc.h"
+	"stm32f0xx_ll_cortex.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_spi.c
+	"stm32f0xx_ll_spi.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_tim.c
+	"stm32f0xx_ll_tim.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_usart.c
+	"stm32f0xx_ll_usart.h"
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_bus.h"
+	"stm32_assert.h"
+
+1537983094 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_utils.c
+	"stm32f0xx_ll_rcc.h"
+	"stm32f0xx_ll_utils.h"
+	"stm32f0xx_ll_system.h"
+	"stm32_assert.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbascii.h"
+	"mbframe.h"
+	"mbcrc.h"
+	"mbport.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.h
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbframe.h
+	"mb.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.h
+	"port.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfunccoils.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdiag.c
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdisc.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncholding.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncinput.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncother.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbconfig.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbutils.c
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	"port.h"
+	"mb.h"
+	"mbproto.h"
+	"user_mb_app.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\mb.c
+	<stdlib.h>
+	<string.h>
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbframe.h"
+	"mbproto.h"
+	"mbfunc.h"
+	"mbport.h"
+	"mbrtu.h"
+	"mbascii.h"
+	"mbtcp.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbfunc.h
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.h
+	"mb.h"
+
+1537983098 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.h
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.c
+	"port.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbrtu.h"
+	"mbframe.h"
+	"mbcrc.h"
+	"mbport.h"
+	"stepper.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.c
+	"stdlib.h"
+	"string.h"
+	"port.h"
+	"mb.h"
+	"mbconfig.h"
+	"mbtcp.h"
+	"mbframe.h"
+	"mbport.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.c
+	"port.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portevent.c
+	"mb.h"
+	"mbport.h"
+
+1538767371 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portserial.c
+	"port.h"
+	"mb.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\porttimer.c
+	"port.h"
+	"mb.h"
+	"mbport.h"
+
+1539035716 source:d:\projects\bandymas_hal_ll\low_layer\core\src\main.c
+	"main.h"
+	"software.h"
+	"nextion.h"
+
+1538767449 d:\projects\bandymas_hal_ll\low_layer\core\inc\software.h
+	"stepper.h"
+	"mb.h"
+	"user_mb_app.h"
+
+1538767371 source:d:\projects\bandymas_hal_ll\low_layer\core\src\software.c
+	"software.h"
+	"M25AAxx.h"
+
+1539026275 source:d:\projects\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
+	"stm32f0xx.h"
+	"stm32f0xx_it.h"
+	"defs.h"
+	"stm32f0xx_ll_usart.h"
+	"user_mb_app.h"
+
+1539026275 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_it.h
+	"stm32f0xx_ll_system.h"
+	"stm32f0xx_ll_gpio.h"
+	"stm32f0xx_ll_exti.h"
+	"main.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\src\system_stm32f0xx.c
+	"stm32f0xx.h"
+
+1537983098 source:d:\projects\bandymas_hal_ll\low_layer\core\src\user_mb_app.c
+	"user_mb_app.h"
+
+1537983102 source:d:\projects\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
+
+1538767024 source:d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
+	<stdlib.h>
+	<string.h>
+	"iic_eeprom.h"
+
+1538759655 d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.h
+	"stepper.h"
+
+1539026276 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_hal_conf.h
+	"main.h"
+	"stm32f0xx_hal_rcc.h"
+	"stm32f0xx_hal_exti.h"
+	"stm32f0xx_hal_gpio.h"
+	"stm32f0xx_hal_dma.h"
+	"stm32f0xx_hal_cortex.h"
+	"stm32f0xx_hal_adc.h"
+	"stm32f0xx_hal_can.h"
+	"stm32f0xx_hal_cec.h"
+	"stm32f0xx_hal_comp.h"
+	"stm32f0xx_hal_crc.h"
+	"stm32f0xx_hal_dac.h"
+	"stm32f0xx_hal_flash.h"
+	"stm32f0xx_hal_i2c.h"
+	"stm32f0xx_hal_i2s.h"
+	"stm32f0xx_hal_irda.h"
+	"stm32f0xx_hal_iwdg.h"
+	"stm32f0xx_hal_pcd.h"
+	"stm32f0xx_hal_pwr.h"
+	"stm32f0xx_hal_rtc.h"
+	"stm32f0xx_hal_smartcard.h"
+	"stm32f0xx_hal_smbus.h"
+	"stm32f0xx_hal_spi.h"
+	"stm32f0xx_hal_tim.h"
+	"stm32f0xx_hal_tsc.h"
+	"stm32f0xx_hal_uart.h"
+	"stm32f0xx_hal_usart.h"
+	"stm32f0xx_hal_wwdg.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_rcc_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_def.h
+	"stm32f0xx.h"
+	"Legacy/stm32_hal_legacy.h"
+	<stdio.h>
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\legacy\stm32_hal_legacy.h
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_gpio_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_dma_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cortex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_adc_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_can.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cec.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_comp.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_crc_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_dac_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_flash_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_i2c_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2s.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_irda_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_iwdg.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_pcd_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_pwr_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_rtc_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_smartcard_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smbus.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_spi_ex.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983092 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_tim_ex.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tsc.h
+	"stm32f0xx_hal_def.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_uart_ex.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart.h
+	"stm32f0xx_hal_def.h"
+	"stm32f0xx_hal_usart_ex.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart_ex.h
+	"stm32f0xx_hal_def.h"
+
+1537983094 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_wwdg.h
+	"stm32f0xx_hal_def.h"
+
