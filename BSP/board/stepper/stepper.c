@@ -12,11 +12,9 @@ USART_TypeDef* ports[] = {USART1, NULL, NULL};
 extern LL_USART_InitTypeDef USART_InitStruct;
 extern M25AAxx_TypeDef M25AAxx;
 
-extern volatile uint32_t timestamp;
-
 static const uint32_t baudrates[6u] = {2400u, 4800u, 9600u, 19200u, 38400u, 57600u};
 
-
+uint8_t iic_buf[100];
 
 void BSP_Start(void) {
 
@@ -87,18 +85,12 @@ void BSP_Start(void) {
 
     while( LL_I2C_IsActiveFlag_BUSY(I2C1) );
 
+    iic_buf[0] = 0x55;
 
-    uint8_t qqq[100];
+    //IIC_Write(0xA0, 0, 0x12);
+    IIC_Read(0xA0, 0, 100, iic_buf);
 
-    qqq[0] = 0x55;
-
-    //IIC_Read(0x50, qqq, 0, 100);
-    //I2C_read_brekeke(I2C1, 0x50, 0, 100, qqq);
-    //I2C_MultiReadChar(I2C1, 0x50, 0, qqq, 100);
-
-    I2C_HW_Read(0xA0, 200, qqq);
-
-
+    uint16_t wrd = IIC_ReadWord(0);
 
 
      do{
@@ -251,15 +243,6 @@ void BSP_ReadDipSwitch(void) {
     xMbSetDInput( DI_SW8_STATE, SMC_Control.DipSwitch.Data>>7 & 0x01 );
 }
 
-
-
-/*  */
-void BSP_Delay(uint32_t delay){
-
-    delay += timestamp;
-
-    while(delay > timestamp);
-}
 
 
 /* chekinam bodreito reiksme - ar standartine? */

@@ -20,15 +20,6 @@
 #define LED7_OFF()      LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_2)
 
 
-/* bandymams */
-#define LED102_ON()       LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_15)
-#define LED102_OFF()      LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_15)
-#define LED102_TOGGLE()   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_15)
-#define LED103_ON()       LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_14)
-#define LED103_OFF()      LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_14)
-#define LED103_TOGGLE()   LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_14)
-
-
 /* Private functions */
 void UNI_Start(void);
 

@@ -15,13 +15,21 @@
 #define LEDS_OFF()              LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_14|LL_GPIO_PIN_15)
 #define LEDS_TOGGLE()           LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_14|LL_GPIO_PIN_15)
 
-#define STATUS_LED_ON()         LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_15)
-#define STATUS_LED_OFF()        LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_15)
-#define STATUS_LED_TOGGLE()     LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_15)
+#define LED102_ON()       	    LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_15)
+#define LED102_OFF()      	    LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_15)
+#define LED102_TOGGLE()   	    LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_15)
 
-#define ERROR_LED_ON()          LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_14)
-#define ERROR_LED_OFF()         LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_14)
-#define ERROR_LED_TOGGLE()      LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_14)
+#define STATUS_LED_ON()         LED102_ON()
+#define STATUS_LED_OFF()        LED102_OFF()
+#define STATUS_LED_TOGGLE()     LED102_TOGGLE()
+
+#define LED103_ON()       	    LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_14)
+#define LED103_OFF()      	    LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_14)
+#define LED103_TOGGLE()   	    LL_GPIO_TogglePin(GPIOB, LL_GPIO_PIN_14)
+
+#define ERROR_LED_ON()          LED103_ON()
+#define ERROR_LED_OFF()         LED103_OFF()
+#define ERROR_LED_TOGGLE()      LED103_TOGGLE()
 
 #define ALARM_RELAY_ON()        LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_13)
 #define ALARM_RELAY_OFF()       LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_13)
@@ -46,14 +54,10 @@
 #define READ_DI2_INPUT()        LL_GPIO_IsInputPinSet(GPIOB, LL_GPIO_PIN_2)
 #define READ_DI3_INPUT()        LL_GPIO_IsInputPinSet(GPIOC, LL_GPIO_PIN_14)
 
-
 #define READ_REFINT()           BSP_ReadADC(LL_ADC_CHANNEL_VREFINT, LL_ADC_RESOLUTION_12B);
 #define READ_VBUS()             BSP_ReadADC(LL_ADC_CHANNEL_0, LL_ADC_RESOLUTION_8B);
 #define READ_SPREQ()            BSP_ReadADC(LL_ADC_CHANNEL_1, LL_ADC_RESOLUTION_8B);
 #define READ_MCUTEMP()          BSP_ReadADC(LL_ADC_CHANNEL_TEMPSENSOR, LL_ADC_RESOLUTION_12B);
-
-
-
 
 #define                         BEEPER_LEVEL_MSK    0x00007000
 #define                         BEEPER_TONE_MSK     0x00000700
@@ -89,7 +93,7 @@ void        BSP_ReadADC(uint32_t channel, uint32_t resolution);
 
 void        BSP_ReadDipSwitch(void);
 
-void        BSP_Delay(uint32_t delay);
+//void        BSP_Delay(uint32_t delay);
 uint8_t     CheckBaudrateValue(uint32_t baudrate);
 uint8_t     CheckBaudrateIndex(uint8_t idx);
 uint8_t     GetIndexByBaudrate(uint32_t baudrate);
