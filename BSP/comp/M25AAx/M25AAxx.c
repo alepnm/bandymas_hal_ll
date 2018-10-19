@@ -328,7 +328,7 @@ static uint8_t Write( uint8_t addr, uint8_t* buffer, uint8_t len ) {
 
                 CS_HIGH();
 
-                HW_Delay(7);
+                Delay_ms(7);
 
                 return 1;
             }
@@ -342,7 +342,7 @@ static uint8_t Write( uint8_t addr, uint8_t* buffer, uint8_t len ) {
             addr += wr_size;
             len -= wr_size;
 
-            HW_Delay(7);
+            Delay_ms(7);
         }
 
         return result;
@@ -360,7 +360,7 @@ static uint8_t Write( uint8_t addr, uint8_t* buffer, uint8_t len ) {
 
     while( GetWriteFlag() != RESET );
 
-    HW_Delay(7);
+    Delay_ms(7);
 
     return result;
 }
