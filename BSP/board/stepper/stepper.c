@@ -90,7 +90,13 @@ void BSP_Start(void) {
     //IIC_Write(0xA0, 0, 0x12);
     IIC_Read(0xA0, 0, 100, iic_buf);
 
-    uint16_t wrd = IIC_ReadWord(0);
+
+
+    //IIC_WriteDWord(25, 0x99887766);
+    //uint32_t wrd = IIC_ReadDWord(26);
+
+    IIC_WriteByteInst(258, 129);
+    uint8_t qwe = IIC_ReadByteInst(258);
 
 
      do{

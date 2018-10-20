@@ -1420,7 +1420,7 @@
 	"defs.h"
 	"main.h"
 
-1539900317 source:d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.c
+1540071714 source:d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.c
 	"stepper.h"
 	"hardware.h"
 	"user_mb_app.h"
@@ -1608,7 +1608,7 @@
 
 1539886023 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
 
-1539900250 d:\projects\bandymas_hal_ll\bsp\hardware.h
+1540071439 d:\projects\bandymas_hal_ll\bsp\hardware.h
 	"defs.h"
 	"main.h"
 
@@ -1639,7 +1639,7 @@
 1539886021 d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.h
 	<stdint.h>
 
-1539897853 source:d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.c
+1539959686 source:d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.c
 	"M25AAxx.h"
 	"hardware.h"
 	"stepper.h"
@@ -1650,9 +1650,8 @@
 1539886021 d:\projects\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.h
 	"defs.h"
 
-1539900781 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
+1540071574 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
 	"hardware.h"
-	"stepper.h"
 
 1539886022 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
 	"stm32f0xx_ll_adc.h"

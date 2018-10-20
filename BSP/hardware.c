@@ -12,7 +12,7 @@
 extern volatile uint32_t timestamp;
 
 /*  */
-void Delay_ms(uint32_t delay){
+void Delay_ms(uint32_t delay) {
 
     delay += timestamp;
 
@@ -44,9 +44,9 @@ void SPI_Receive8(uint8_t* rxdata, uint16_t len) {
 
 
 /*  */
-void SPI_Transmit8(uint8_t* txdata, uint16_t len){
+void SPI_Transmit8(uint8_t* txdata, uint16_t len) {
 
-    if(txdata == NULL || len == 0){
+    if(txdata == NULL || len == 0) {
         ErrorCode = RES_BAD_PARAMS;
         Error_Handler();
     }
@@ -101,9 +101,9 @@ uint16_t ADC_StartConversion(uint32_t channel, uint32_t resolution) {
     ADC1->CHSELR = channel;
     LL_ADC_SetResolution(ADC1, resolution);
 
-    do{
+    do {
         LL_ADC_Enable(ADC1);
-    }while ( !LL_ADC_IsActiveFlag_ADRDY(ADC1) );
+    } while( !LL_ADC_IsActiveFlag_ADRDY(ADC1) );
 
     LL_ADC_REG_StartConversion(ADC1);
     while( !LL_ADC_IsActiveFlag_EOC(ADC1) );
@@ -123,96 +123,137 @@ uint16_t ADC_StartConversion(uint32_t channel, uint32_t resolution) {
         break;
     }
 
-    do{
+    do {
         LL_ADC_Disable(ADC1);
-    }while( LL_ADC_IsEnabled(ADC1) );
+    } while( LL_ADC_IsEnabled(ADC1) );
 
     return result;
 }
 
 
 /*  */
-uint8_t IIC_Write(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf)
-{
+uint8_t IIC_Check(uint8_t iic_addr) {
+
     LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, 1, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
 
     LL_I2C_TransmitData8(I2C1, 0x00);
 
-    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET ){
-        if(LL_SYSTICK_IsActiveCounterFlag() && LL_I2C_IsActiveFlag_NACK(I2C1))
-        {
+    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET ) {
+        if(LL_SYSTICK_IsActiveCounterFlag() && LL_I2C_IsActiveFlag_NACK(I2C1)) {
             return I2C_ADDR_NACK;
         }
     }
 
     LL_I2C_ClearFlag_STOP(I2C1);
 
-    LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, len+2, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
+    return I2C_OK;
+}
 
+/*  */
+uint8_t IIC_Write(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf) {
+    if( IIC_Check(iic_addr) != I2C_OK ) return 1;
+
+    LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, len+2, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
     while( LL_I2C_IsActiveFlag_ADDR(I2C1) != RESET );
 
-    LL_I2C_TransmitData8(I2C1, ((reg & 0xFF00) >> 8));
+    LL_I2C_TransmitData8(I2C1, reg & 0x00FF);
     while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
 
-    LL_I2C_TransmitData8(I2C1, (reg & 0x00FF));
+    LL_I2C_TransmitData8(I2C1, (reg>>8) & 0x00FF);
     while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
 
-    do{
+    do {
         LL_I2C_TransmitData8(I2C1, *buf);
         while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
         buf++;
-    }while(--len > 0);
+    } while(--len > 0);
 
     LL_I2C_ClearFlag_STOP(I2C1);
 
-    return I2C_OK;
+    Delay_ms(5);
+
+    return 0;
 }
 
 
 /*  */
-uint8_t IIC_Read(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf)
-{
-    LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, 1, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
+uint8_t IIC_Read(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf) {
+    if( IIC_Check(iic_addr) != I2C_OK ) return 1;
 
-    LL_I2C_TransmitData8(I2C1, 0x00);
+    LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, 2, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
+    while( LL_I2C_IsActiveFlag_ADDR(I2C1) != RESET );
 
-    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET ){
-        if(LL_SYSTICK_IsActiveCounterFlag() && LL_I2C_IsActiveFlag_NACK(I2C1))
-        {
-            return I2C_ADDR_NACK;
-        }
-    }
+    LL_I2C_TransmitData8(I2C1, reg & 0x00FF);
+    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
+
+    LL_I2C_TransmitData8(I2C1, (reg>>8) & 0x00FF);
+    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
 
     LL_I2C_ClearFlag_STOP(I2C1);
 
-    LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, 2, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
+    LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, len, LL_I2C_MODE_SOFTEND, LL_I2C_GENERATE_START_READ);
 
-    while( LL_I2C_IsActiveFlag_ADDR(I2C1) != RESET );
-
-    LL_I2C_TransmitData8(I2C1, ((reg & 0xFF00) >> 8));
-    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
-
-    LL_I2C_TransmitData8(I2C1, (reg & 0x00FF));
-    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
-
-    Delay_ms(5);    //<-- butinas uzdelsimas
-
-    LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, len, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_READ);
-
-    do{
+    do {
         while( LL_I2C_IsActiveFlag_RXNE(I2C1) == RESET );
         *buf = LL_I2C_ReceiveData8(I2C1);
         buf++;
-    }while(--len > 0);
+    } while(--len > 0);
 
-    LL_I2C_ClearFlag_STOP(I2C1);
+    LL_I2C_AcknowledgeNextData(I2C1, LL_I2C_NACK);
+    LL_I2C_GenerateStopCondition(I2C1);
 
-    return I2C_OK;
+    return 0;
 }
 
 
+/* Baito skaitymas - greita funkcija */
+uint8_t IIC_ReadByteInst(uint16_t reg) {
+
+    LL_I2C_HandleTransfer(I2C1, 0xA0, LL_I2C_ADDRSLAVE_7BIT, 2, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
+    while( LL_I2C_IsActiveFlag_ADDR(I2C1) != RESET );
+
+    LL_I2C_TransmitData8(I2C1, reg & 0x00FF);
+    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
+
+    LL_I2C_TransmitData8(I2C1, (reg>>8) & 0x00FF);
+    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
+
+    LL_I2C_ClearFlag_STOP(I2C1);
+
+    LL_I2C_HandleTransfer(I2C1, 0xA0, LL_I2C_ADDRSLAVE_7BIT, 1, LL_I2C_MODE_SOFTEND, LL_I2C_GENERATE_START_READ);
+
+    while( LL_I2C_IsActiveFlag_RXNE(I2C1) == RESET );
+    uint8_t data = LL_I2C_ReceiveData8(I2C1);
+
+    LL_I2C_AcknowledgeNextData(I2C1, LL_I2C_NACK);
+    LL_I2C_GenerateStopCondition(I2C1);
+
+    return data;
+}
+
+
+/* Baito irasymas - greita funkcija */
+void IIC_WriteByteInst(uint16_t reg, uint8_t data) {
+
+    LL_I2C_HandleTransfer(I2C1, 0xA0, LL_I2C_ADDRSLAVE_7BIT, 3, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
+    while( LL_I2C_IsActiveFlag_ADDR(I2C1) != RESET );
+
+    LL_I2C_TransmitData8(I2C1, reg & 0x00FF);
+    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
+
+    LL_I2C_TransmitData8(I2C1, (reg>>8) & 0x00FF);
+    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
+
+    LL_I2C_TransmitData8(I2C1, data);
+    while( LL_I2C_IsActiveFlag_TXE(I2C1) == RESET );
+
+    LL_I2C_ClearFlag_STOP(I2C1);
+
+    Delay_ms(5);
+}
+
 /*  */
-uint8_t IIC_ReadByte(uint16_t reg){
+uint8_t IIC_ReadByte(uint16_t reg) {
 
     uint8_t data;
 
@@ -223,7 +264,7 @@ uint8_t IIC_ReadByte(uint16_t reg){
 
 
 /*  */
-uint16_t IIC_ReadWord(uint16_t reg){
+uint16_t IIC_ReadWord(uint16_t reg) {
 
     uint8_t data[2];
 
@@ -234,7 +275,7 @@ uint16_t IIC_ReadWord(uint16_t reg){
 
 
 /*  */
-uint32_t IIC_ReadDWord(uint32_t reg){
+uint32_t IIC_ReadDWord(uint16_t reg) {
 
     uint8_t data[4];
 
@@ -244,22 +285,24 @@ uint32_t IIC_ReadDWord(uint32_t reg){
 }
 
 /*  */
-void IIC_WriteByte(uint16_t reg, uint8_t val){
+void IIC_WriteByte(uint16_t reg, uint8_t val) {
     (void)IIC_Write(0xA0, reg, 1, &val);
 }
 
 /*  */
-void IIC_WriteWord(uint16_t reg, uint16_t val){
+void IIC_WriteWord(uint16_t reg, uint16_t val) {
 
-    uint8_t data[2]={ val & 0xFF, val >> 8 };
+    uint8_t data[2]= { val & 0x00FF, (val >> 8) & 0x00FF };
 
     (void)IIC_Write(0xA0, reg, 2, data);
 }
 
 /*  */
-void IIC_WriteDWord(uint16_t reg, uint32_t val){
+void IIC_WriteDWord(uint16_t reg, uint32_t val) {
 
-    uint8_t data[4]={ val & 0xFF, val >> 8, val >> 16, val >> 24 };
+    uint8_t data[4]= { val & 0x000000FF, (val >> 8) & 0x000000FF, (val >> 16) & 0x000000FF, (val >> 24) & 0x000000FF };
 
     (void)IIC_Write(0xA0, reg, 4, data);
 }
+
+
