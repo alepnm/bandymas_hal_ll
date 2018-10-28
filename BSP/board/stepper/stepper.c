@@ -1,22 +1,19 @@
 
 
 #include "stepper.h"
-#include "hardware.h"
 #include "user_mb_app.h"
 #include "M25AAxx.h"
 
 
-
-USART_TypeDef* ports[] = {USART1, NULL, NULL};
-
 extern LL_USART_InitTypeDef USART_InitStruct;
-extern M25AAxx_TypeDef M25AAxx;
+extern USART_TypeDef* ports[3u];
+extern const uint32_t baudrates[6u];
 
-static const uint32_t baudrates[6u] = {2400u, 4800u, 9600u, 19200u, 38400u, 57600u};
+extern M25AAxx_TypeDef M25AAxx;
 
 uint8_t iic_buf[100];
 
-void BSP_Start(void) {
+void STP_Start(void) {
 
     SysTick_Config(SystemCoreClock/1000);
 
@@ -67,7 +64,7 @@ void BSP_Start(void) {
         LL_SPI_Enable(SPI1);
     } while( !LL_SPI_IsEnabled(SPI1) );
 
-    BSP_ReadDipSwitch();
+    STP_ReadDipSwitch();
     M25AAxx_Init();
 
 
@@ -109,43 +106,7 @@ void BSP_Start(void) {
 
 
 /*  */
-void BSP_UartConfig(uint8_t ucPORT, uint32_t ulBaudRate, uint8_t ucDataBits,  uint8_t eParity ) {
-
-    do{
-         LL_USART_Disable(ports[ucPORT]);
-    }while( LL_USART_IsEnabled(ports[ucPORT]) );
-
-    if( CheckBaudrateValue( ulBaudRate ) ) {
-        ulBaudRate = GetBaudrateByIndex( MBBAURATE_DEF );
-        usRegHoldingBuf[HR_MBBAUDRATE] = MBBAURATE_DEF;
-    }
-
-    USART_InitStruct.BaudRate = ulBaudRate;
-
-    switch(eParity) {
-    case MB_PAR_ODD:
-        USART_InitStruct.Parity = LL_USART_PARITY_ODD;
-        USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_9B;
-        break;
-    case MB_PAR_EVEN:
-        USART_InitStruct.Parity = LL_USART_PARITY_EVEN;
-        USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_9B;
-        break;
-    default:
-        USART_InitStruct.Parity = LL_USART_PARITY_NONE;
-        USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
-    }
-
-    LL_USART_Init(ports[ucPORT], &USART_InitStruct);
-
-    do{
-        LL_USART_Enable(ports[ucPORT]);
-    }while( !LL_USART_IsEnabled(ports[ucPORT]) );
-}
-
-
-/*  */
-void BSP_UartSendString(const char* str){
+void STP_UartSendString(const char* str){
 
     uint8_t i = 0;
 
@@ -158,7 +119,7 @@ void BSP_UartSendString(const char* str){
 
 
 /*  */
-void BSP_ReadADC(uint32_t channel, uint32_t resolution) {
+void STP_ReadADC(uint32_t channel, uint32_t resolution) {
 
     uint16_t* dest;
     uint16_t vref_mv = SMC_Control.ADC_Vals.VRef.mV;
@@ -205,7 +166,7 @@ void BSP_ReadADC(uint32_t channel, uint32_t resolution) {
 
 
 /*  */
-void BSP_ReadDipSwitch(void) {
+void STP_ReadDipSwitch(void) {
 
     uint8_t delay = 10, dipsw = 0;
     static uint8_t ldipsw = 0;

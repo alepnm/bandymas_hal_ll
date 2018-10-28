@@ -47,7 +47,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-LL_USART_InitTypeDef USART_InitStruct;
+extern LL_USART_InitTypeDef USART_InitStruct;
 
 
 SmcHandle_TypeDef SMC_Control;
@@ -142,8 +142,6 @@ int main(void)
   MX_TIM16_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-
-    BSP_Start();
 
     SystemStart();
 

@@ -9,10 +9,13 @@
 #define I2C_OK 0
 
 
-USART_TypeDef* ports[] = {USART1, NULL, NULL};
+USART_TypeDef* ports[3u] = {USART1, NULL, NULL};
+LL_USART_InitTypeDef USART_InitStruct;
 
-extern LL_USART_InitTypeDef USART_InitStruct;
-extern volatile uint32_t timestamp;
+const uint32_t baudrates[6u] = {2400u, 4800u, 9600u, 19200u, 38400u, 57600u};
+
+//extern volatile uint32_t timestamp;
+
 
 /*  */
 //void Delay_ms(uint32_t delay) {
@@ -44,6 +47,8 @@ void USART_Config(uint8_t ucPORT, uint32_t ulBaudRate, uint32_t ulDataBits,  uin
          LL_USART_Disable(ports[ucPORT]);
     }while( LL_USART_IsEnabled(ports[ucPORT]) );
 
+
+    /* cia reiketu patikrinti baudreito reiksme - ar ji standartine? */
     USART_InitStruct.BaudRate = ulBaudRate;
     USART_InitStruct.Parity = ulParity;
 
@@ -62,7 +67,6 @@ void USART_Config(uint8_t ucPORT, uint32_t ulBaudRate, uint32_t ulDataBits,  uin
         LL_USART_Enable(ports[ucPORT]);
     }while( !LL_USART_IsEnabled(ports[ucPORT]) );
 }
-
 
 
 /*  */

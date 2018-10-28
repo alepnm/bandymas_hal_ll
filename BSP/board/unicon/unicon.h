@@ -2,9 +2,7 @@
 #define UNICON_H_INCLUDED
 
 
-//#include "pheriph.h"
 #include "hardware.h"
-#include "stm32_assert.h"
 
 #define LEDS_ON()       LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_0|LL_GPIO_PIN_1|LL_GPIO_PIN_2|LL_GPIO_PIN_10)
 #define LEDS_OFF()      LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_0|LL_GPIO_PIN_1|LL_GPIO_PIN_2|LL_GPIO_PIN_10)

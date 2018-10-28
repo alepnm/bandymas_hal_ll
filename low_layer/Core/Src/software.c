@@ -7,6 +7,8 @@ static void EeDataRestore(void);
 
 void SystemStart(void){
 
+    STP_Start();
+
     /* inicializuojam sistemine aplinka: pointerius, pradines reiksmes  */
     StpSystemInit();
 
@@ -96,7 +98,7 @@ static void EeDataRestore(void){
 void SystemDataUpdate(void){
 
     /*  */
-    BSP_ReadDipSwitch();
+    STP_ReadDipSwitch();
 
     /*  */
     READ_REFINT();
@@ -110,9 +112,6 @@ void SystemDataUpdate(void){
 void ModbusDataUpdate(void){
 
 
-
-
-
     usRegInputBuf[IR_SPREQ_VALUE] = SMC_Control.ADC_Vals.SpReq.mV;
     usRegInputBuf[IR_MCUTEMP] = SMC_Control.ADC_Vals.McuTemp.celsius;
 
@@ -120,6 +119,5 @@ void ModbusDataUpdate(void){
     xMbSetDInput( DI_DI1_STATE, READ_DI1_INPUT() );
     xMbSetDInput( DI_DI2_STATE, READ_DI2_INPUT() );
     xMbSetDInput( DI_DI3_STATE, READ_DI3_INPUT() );
-
 
 }

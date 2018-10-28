@@ -103,6 +103,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="..\BSP\board\stepper\stepper.h" />
+		<Unit filename="..\BSP\board\unicon\unicon.h" />
 		<Unit filename="..\BSP\comp\IIC_EEPROM\iic_eeprom.c">
 			<Option compilerVar="CC" />
 			<Option compile="0" />
