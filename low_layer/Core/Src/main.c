@@ -147,6 +147,8 @@ int main(void)
 
     SystemStart();
 
+    Delay_ms(1000);
+
 
 
   /* USER CODE END 2 */

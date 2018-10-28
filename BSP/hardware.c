@@ -9,15 +9,61 @@
 #define I2C_OK 0
 
 
+USART_TypeDef* ports[] = {USART1, NULL, NULL};
+
+extern LL_USART_InitTypeDef USART_InitStruct;
 extern volatile uint32_t timestamp;
+
+/*  */
+//void Delay_ms(uint32_t delay) {
+//
+//    delay += timestamp;
+//
+//    while(delay > timestamp);
+//}
+
 
 /*  */
 void Delay_ms(uint32_t delay) {
 
-    delay += timestamp;
+    LL_RCC_ClocksTypeDef RCC_Clocks;
 
-    while(delay > timestamp);
+    LL_RCC_GetSystemClocksFreq(&RCC_Clocks);
+
+    uint32_t nCount = (RCC_Clocks.HCLK_Frequency/10000)*delay;
+
+    while(nCount-- > 0);
 }
+
+
+
+/*  */
+void USART_Config(uint8_t ucPORT, uint32_t ulBaudRate, uint32_t ulDataBits,  uint32_t ulParity ) {
+
+    do{
+         LL_USART_Disable(ports[ucPORT]);
+    }while( LL_USART_IsEnabled(ports[ucPORT]) );
+
+    USART_InitStruct.BaudRate = ulBaudRate;
+    USART_InitStruct.Parity = ulParity;
+
+    switch(ulParity) {
+    case LL_USART_PARITY_ODD:
+    case LL_USART_PARITY_EVEN:
+        USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_9B;
+        break;
+    default:
+        USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
+    }
+
+    LL_USART_Init(ports[ucPORT], &USART_InitStruct);
+
+    do{
+        LL_USART_Enable(ports[ucPORT]);
+    }while( !LL_USART_IsEnabled(ports[ucPORT]) );
+}
+
+
 
 /*  */
 void SPI_Receive8(uint8_t* rxdata, uint16_t len) {
