@@ -1420,13 +1420,13 @@
 	"defs.h"
 	"main.h"
 
-1540773107 source:d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.c
+1540800579 source:d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.c
 	"stepper.h"
 	"user_mb_app.h"
 	"M25AAxx.h"
 	"l6470.h"
 
-1540772370 d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.h
+1540800579 d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.h
 	"hardware.h"
 
 1540772066 d:\projects\bandymas_hal_ll\low_layer\core\inc\defs.h
@@ -1435,7 +1435,7 @@
 	<string.h>
 	<stdlib.h>
 
-1539882423 d:\projects\bandymas_hal_ll\low_layer\core\inc\main.h
+1540801487 d:\projects\bandymas_hal_ll\low_layer\core\inc\main.h
 	"stm32f0xx_ll_adc.h"
 	"stm32f0xx_ll_i2c.h"
 	"stm32f0xx_ll_crs.h"
@@ -1605,9 +1605,9 @@
 1539882422 d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_gpio.h
 	"stm32f0xx.h"
 
-1539882423 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
+1540801486 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
 
-1540772548 d:\projects\bandymas_hal_ll\bsp\hardware.h
+1540812920 d:\projects\bandymas_hal_ll\bsp\hardware.h
 	"stm32_assert.h"
 	"defs.h"
 	"main.h"
@@ -1650,7 +1650,7 @@
 1539882421 d:\projects\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.h
 	"defs.h"
 
-1540771281 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
+1540812920 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
 	"hardware.h"
 
 1539882422 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
@@ -1842,7 +1842,7 @@
 1539882423 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.c
 	"port.h"
 
-1540771161 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
+1540800807 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -1851,7 +1851,6 @@
 	"mbframe.h"
 	"mbcrc.h"
 	"mbport.h"
-	"stepper.h"
 
 1539882423 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.c
 	"stdlib.h"
@@ -1879,28 +1878,28 @@
 	"mb.h"
 	"mbport.h"
 
-1540771387 source:d:\projects\bandymas_hal_ll\low_layer\core\src\main.c
+1540814293 source:d:\projects\bandymas_hal_ll\low_layer\core\src\main.c
 	"main.h"
-	"software.h"
+	"unicon.h"
 	"nextion.h"
+	"iic_eeprom.h"
+	"software.h"
 
-1540771161 d:\projects\bandymas_hal_ll\low_layer\core\inc\software.h
-	"stepper.h"
+1540800817 d:\projects\bandymas_hal_ll\low_layer\core\inc\software.h
 	"mb.h"
 	"user_mb_app.h"
 
-1540771161 source:d:\projects\bandymas_hal_ll\low_layer\core\src\software.c
+1540807118 source:d:\projects\bandymas_hal_ll\low_layer\core\src\software.c
 	"software.h"
-	"M25AAxx.h"
 
-1539882423 source:d:\projects\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
+1540801486 source:d:\projects\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
 	"stm32f0xx.h"
 	"stm32f0xx_it.h"
 	"defs.h"
 	"stm32f0xx_ll_usart.h"
 	"user_mb_app.h"
 
-1539882423 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_it.h
+1540801486 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_it.h
 	"stm32f0xx_ll_system.h"
 	"stm32f0xx_ll_gpio.h"
 	"stm32f0xx_ll_exti.h"
@@ -1914,15 +1913,16 @@
 
 1539882423 source:d:\projects\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
 
-1538767024 source:d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
+1540813741 source:d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
 	<stdlib.h>
 	<string.h>
 	"iic_eeprom.h"
+	"hardware.h"
 
-1538759655 d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.h
-	"stepper.h"
+1540813710 d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.h
+	<stdint.h>
 
-1539882423 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_hal_conf.h
+1540801487 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_hal_conf.h
 	"main.h"
 	"stm32f0xx_hal_rcc.h"
 	"stm32f0xx_hal_exti.h"
@@ -2783,4 +2783,10 @@
 	"hardware.h"
 
 1540772066 d:\projects\bandymas_hal_ll\bsp\comp\l6470\l6470.h
+
+1539882421 source:d:\projects\bandymas_hal_ll\bsp\board\unicon\unicon.c
+	"unicon.h"
+
+1540766415 d:\projects\bandymas_hal_ll\bsp\board\unicon\unicon.h
+	"hardware.h"
 

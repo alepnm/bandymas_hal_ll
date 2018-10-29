@@ -12,9 +12,9 @@ extern const uint32_t baudrates[6u];
 
 SmcHandle_TypeDef SMC_Control;
 
-uint8_t iic_buf[100];
-
 void STP_Start(void) {
+
+    uint8_t i = 0;
 
     SysTick_Config(SystemCoreClock/1000);
 
@@ -74,33 +74,41 @@ void STP_Start(void) {
     SET_BEEPER_COUNTER(25);
 
 
-    IIC_Init();
+    /* konfiguruojam Modbus */
+#if defined(MODBUS_ENABLE)
+    if( eMBInit( MB_RTU, (UCHAR)(*MbPortParams.MbAddr.pmbus), MbPortParams.Uart, (ULONG)( GetBaudrateByIndex(*MbPortParams.Baudrate.pmbus) ), (eMBParity)(*MbPortParams.Parity.pmbus) ) == MB_ENOERR ){
+        if( eMBEnable() == MB_ENOERR ){
+            if( eMBSetSlaveID( 123, TRUE, ucSlaveIdBuf, (MB_FUNC_OTHER_REP_SLAVEID_BUF - 4) ) == MB_ENOERR ){
+                MbPortParams.ModbusActive = true;
+            }
+        }
+    }
+#endif
+
+    SMC_Control.StrData.pHWVersion = ucSlaveIdBuf + 3;
+    SMC_Control.StrData.pFWVersion = ucSlaveIdBuf + 6;
+    SMC_Control.StrData.pId = ucSlaveIdBuf + 12;
+    SMC_Control.StrData.pName = ucSlaveIdBuf + 19;
+    SMC_Control.StrData.pProdCode = ucSlaveIdBuf + 23;
+
+
+    ucSlaveIdBuf[0] =   UNIT_GROUP;
+    ucSlaveIdBuf[1] =   UNIT_SUBGROUP;
+    ucSlaveIdBuf[2] =   'H';
+    ucSlaveIdBuf[5] =   'F';
+    ucSlaveIdBuf[8] =   'S';
+    ucSlaveIdBuf[11] =  'I';
+    ucSlaveIdBuf[18] =  'e';
+
+    memcpy(SMC_Control.StrData.pFWVersion, UNIT_FW_VERSION, 2);
+    memcpy(SMC_Control.StrData.pHWVersion, UNIT_HW_VERSION, 2);
+    memcpy(SMC_Control.StrData.pName, UNIT_NAME, 3);
+    memcpy(SMC_Control.StrData.pProdCode, UNIT_PROD_CODE, 7);
+
 
     do{
-        LL_I2C_Enable(I2C1);
-    } while( LL_I2C_IsEnabled(I2C1) == RESET );
-
-    while( LL_I2C_IsActiveFlag_BUSY(I2C1) );
-
-    iic_buf[0] = 0x55;
-
-    //IIC_Write(0xA0, 0, 0x12);
-    IIC_Read(0xA0, 0, 100, iic_buf);
-
-
-
-    //IIC_WriteDWord(25, 0x99887766);
-    //uint32_t wrd = IIC_ReadDWord(26);
-
-    IIC_WriteByteInst(258, 129);
-    uint8_t qwe = IIC_ReadByteInst(258);
-
-
-     do{
-        LL_I2C_Disable(I2C1);
-    } while( LL_I2C_IsEnabled(I2C1) == SET );
-
-
+        *(SMC_Control.StrData.pId + i) = M25AAxx.UidBuffer[i];
+    }while(++i < M25AAxx_UID_BUFFER_SIZE);
 
 }
 
@@ -116,6 +124,38 @@ void STP_UartSendString(const char* str){
         i++;
     }
 }
+
+
+
+/*  */
+void STP_SystemDataUpdate(void){
+
+    /*  */
+    STP_ReadDipSwitch();
+
+    /*  */
+    READ_REFINT();
+    READ_VBUS();
+    READ_SPREQ();
+    READ_MCUTEMP();
+
+}
+
+
+/*   */
+void STP_ModbusDataUpdate(void){
+
+
+    usRegInputBuf[IR_SPREQ_VALUE] = SMC_Control.ADC_Vals.SpReq.mV;
+    usRegInputBuf[IR_MCUTEMP] = SMC_Control.ADC_Vals.McuTemp.celsius;
+
+    xMbSetDInput( DI_DI0_STATE, READ_DI0_INPUT() );
+    xMbSetDInput( DI_DI1_STATE, READ_DI1_INPUT() );
+    xMbSetDInput( DI_DI2_STATE, READ_DI2_INPUT() );
+    xMbSetDInput( DI_DI3_STATE, READ_DI3_INPUT() );
+
+}
+
 
 
 /*  */

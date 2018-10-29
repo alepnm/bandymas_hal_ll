@@ -5,12 +5,12 @@
 #define I2C_WRITE 0
 #define I2C_READ  1
 
-#define I2C_ADDR_NACK 1
-#define I2C_OK 0
-
 
 USART_TypeDef* ports[3u] = {USART1, NULL, NULL};
 LL_USART_InitTypeDef USART_InitStruct;
+
+LL_RTC_TimeTypeDef RTC_Time;
+LL_RTC_DateTypeDef RTC_Date;
 
 const uint32_t baudrates[6u] = {2400u, 4800u, 9600u, 19200u, 38400u, 57600u};
 
@@ -33,11 +33,37 @@ void Delay_ms(uint32_t delay) {
 
     LL_RCC_GetSystemClocksFreq(&RCC_Clocks);
 
-    uint32_t nCount = (RCC_Clocks.HCLK_Frequency/10000)*delay;
+    uint32_t nCount = (RCC_Clocks.SYSCLK_Frequency/14000)*delay;
 
     while(nCount-- > 0);
 }
 
+
+
+void HW_Init(void){
+
+    SysTick_Config(SystemCoreClock/1000);
+
+    RTC_Time.Hours = 0x09;
+    RTC_Time.Minutes = 0x29;
+    RTC_Time.Seconds = 0x13;
+    RTC_Time.TimeFormat = LL_RTC_HOURFORMAT_24HOUR;
+
+    RTC_Date.Day = 0x29;
+    RTC_Date.WeekDay = LL_RTC_WEEKDAY_MONDAY;
+    RTC_Date.Month = LL_RTC_MONTH_OCTOBER;
+    RTC_Date.Year = 0x18;
+
+
+    LL_RTC_EnableInitMode(RTC);
+    LL_RTC_DisableWriteProtection(RTC);
+
+    LL_RTC_TIME_Config(RTC, RTC_Time.TimeFormat, RTC_Time.Hours, RTC_Time.Minutes, RTC_Time.Seconds);
+    LL_RTC_DATE_Config(RTC, RTC_Date.WeekDay, RTC_Date.Day, RTC_Date.Month, RTC_Date.Year);
+
+    LL_RTC_EnableWriteProtection(RTC);
+    LL_RTC_DisableInitMode(RTC);
+}
 
 
 /*  */
@@ -210,7 +236,8 @@ uint8_t IIC_Check(uint8_t iic_addr) {
 }
 
 /*  */
-uint8_t IIC_Write(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf) {
+uint8_t IIC_Write(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len) {
+
     if( IIC_Check(iic_addr) != I2C_OK ) return 1;
 
     LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, len+2, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
@@ -237,7 +264,8 @@ uint8_t IIC_Write(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf) {
 
 
 /*  */
-uint8_t IIC_Read(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf) {
+uint8_t IIC_Read(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len) {
+
     if( IIC_Check(iic_addr) != I2C_OK ) return 1;
 
     LL_I2C_HandleTransfer(I2C1, iic_addr, LL_I2C_ADDRSLAVE_7BIT, 2, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
@@ -311,58 +339,4 @@ void IIC_WriteByteInst(uint16_t reg, uint8_t data) {
 
     Delay_ms(5);
 }
-
-/*  */
-uint8_t IIC_ReadByte(uint16_t reg) {
-
-    uint8_t data;
-
-    (void)IIC_Read(0xA0, reg, 1, &data);
-
-    return data;
-}
-
-
-/*  */
-uint16_t IIC_ReadWord(uint16_t reg) {
-
-    uint8_t data[2];
-
-    (void)IIC_Read(0xA0, reg, 2, data);
-
-    return (data[1]<<8 | data[0] );
-}
-
-
-/*  */
-uint32_t IIC_ReadDWord(uint16_t reg) {
-
-    uint8_t data[4];
-
-    (void)IIC_Read(0xA0, reg, 4, data);
-
-    return ( data[0] | data[1] << 8 | data[2] << 16 | data[3] << 24 );
-}
-
-/*  */
-void IIC_WriteByte(uint16_t reg, uint8_t val) {
-    (void)IIC_Write(0xA0, reg, 1, &val);
-}
-
-/*  */
-void IIC_WriteWord(uint16_t reg, uint16_t val) {
-
-    uint8_t data[2]= { val & 0x00FF, (val >> 8) & 0x00FF };
-
-    (void)IIC_Write(0xA0, reg, 2, data);
-}
-
-/*  */
-void IIC_WriteDWord(uint16_t reg, uint32_t val) {
-
-    uint8_t data[4]= { val & 0x000000FF, (val >> 8) & 0x000000FF, (val >> 16) & 0x000000FF, (val >> 24) & 0x000000FF };
-
-    (void)IIC_Write(0xA0, reg, 4, data);
-}
-
 

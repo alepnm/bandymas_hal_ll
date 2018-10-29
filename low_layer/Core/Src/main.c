@@ -40,8 +40,10 @@
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-#include "software.h"
+#include "unicon.h"
 #include "nextion.h"
+#include "iic_eeprom.h"
+#include "software.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -60,6 +62,10 @@ MbPortParams_TypeDef MbPortParams = {
 };
 
 
+ extern LL_RTC_TimeTypeDef RTC_Time;
+ extern LL_RTC_DateTypeDef RTC_Date;
+
+
 uint8_t UsartState = 0; // 0-IDLE, 1-RXNE, 2-TC
 uint8_t RxByte;
 uint8_t HMI_CommandBuffer[30];
@@ -69,10 +75,11 @@ extern volatile uint32_t timestamp;
 
 /* Private variables ---------------------------------------------------------*/
 uint8_t ErrorCode = 0;
-uint32_t rtc_time = 0;
-uint32_t rtc_date = 0;
+
+uint8_t rtc_second = 0, rtc_minute = 0, rtc_hour = 0;
 
 
+uint8_t iic_buf[I2C_MEMORY_SIZE];
 
 
 /* USER CODE END PV */
@@ -140,11 +147,8 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
+    HW_Init();
     SystemStart();
-
-    Delay_ms(1000);
-
-
 
   /* USER CODE END 2 */
 
@@ -152,21 +156,31 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 
+    IIC_Init();
+
+    EEP24XX_Clear();
+    EEP24XX_Read( 0, iic_buf, I2C_MEMORY_SIZE );
+
+    IIC_WriteByteInst(55, 0xAA);
+    uint8_t qqq = IIC_ReadByteInst(55);
+
 
     while (1) {
 
         if(delay <= timestamp) {
 
-            delay = timestamp + 20;
+            delay = timestamp + 50;
 
-            STATUS_LED_TOGGLE();
+            RTC_Time.Seconds = LL_RTC_TIME_GetSecond(RTC);
+            rtc_second = __LL_RTC_GET_SECOND(RTC_Time.Seconds);
 
-            rtc_time = LL_RTC_TIME_Get(RTC);
+            RTC_Time.Minutes = LL_RTC_TIME_GetMinute(RTC);
+            rtc_minute = __LL_RTC_GET_MINUTE(RTC_Time.Minutes);
 
-            SystemDataUpdate();
+            RTC_Time.Hours = LL_RTC_TIME_GetHour(RTC);
+            rtc_hour = __LL_RTC_GET_HOUR(RTC_Time.Hours);
 
-            ModbusDataUpdate();
-
+            LED2_TOGGLE();
         }
 
 
@@ -184,8 +198,6 @@ int main(void)
                 do{
                     HMI_CommandBuffer[i] = 0;
                 }while(i-- > 0);
-
-                ERROR_LED_TOGGLE();
 
             }else{
                 i++;
@@ -312,32 +324,8 @@ static void MX_ADC_Init(void)
   LL_ADC_InitTypeDef ADC_InitStruct;
   LL_ADC_REG_InitTypeDef ADC_REG_InitStruct;
 
-  LL_GPIO_InitTypeDef GPIO_InitStruct;
-
   /* Peripheral clock enable */
   LL_APB1_GRP2_EnableClock(LL_APB1_GRP2_PERIPH_ADC1);
-
-  /**ADC GPIO Configuration
-  PA0   ------> ADC_IN0
-  PA1   ------> ADC_IN1
-  */
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_0;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_1;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-    /**Configure Regular Channel
-    */
-  LL_ADC_REG_SetSequencerChAdd(ADC1, LL_ADC_CHANNEL_0);
-
-    /**Configure Regular Channel
-    */
-  LL_ADC_REG_SetSequencerChAdd(ADC1, LL_ADC_CHANNEL_1);
 
     /**Configure Regular Channel
     */
@@ -427,8 +415,6 @@ static void MX_I2C1_Init(void)
   LL_I2C_EnableAutoEndMode(I2C1);
 
   LL_I2C_SetOwnAddress2(I2C1, 0, LL_I2C_OWNADDRESS2_NOMASK);
-
-
 
 }
 
@@ -744,68 +730,46 @@ static void MX_USART1_UART_Init(void)
 static void MX_GPIO_Init(void)
 {
 
-  LL_EXTI_InitTypeDef EXTI_InitStruct;
   LL_GPIO_InitTypeDef GPIO_InitStruct;
 
   /* GPIO Ports Clock Enable */
-  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOC);
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOF);
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
 
   /**/
-  LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_13);
+  LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_0);
 
   /**/
-  LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_10);
+  LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_1);
 
   /**/
-  LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_11);
+  LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_2);
 
   /**/
-  LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_12);
-
-  /**/
-  LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_13);
-
-  /**/
-  LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_14);
-
-  /**/
-  LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_15);
-
-  /**/
-  LL_GPIO_SetOutputPin(GPIOF, LL_GPIO_PIN_6);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_13;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_14;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+  LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_10);
 
   /**/
   GPIO_InitStruct.Pin = LL_GPIO_PIN_0;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /**/
   GPIO_InitStruct.Pin = LL_GPIO_PIN_1;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /**/
   GPIO_InitStruct.Pin = LL_GPIO_PIN_2;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
@@ -816,70 +780,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_11;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_12;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_13;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_14;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_15;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /**/
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_6;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(GPIOF, &GPIO_InitStruct);
-
-  /**/
-  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE2);
-
-  /**/
-  LL_GPIO_SetPinPull(GPIOA, LL_GPIO_PIN_2, LL_GPIO_PULL_NO);
-
-  /**/
-  LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_2, LL_GPIO_MODE_INPUT);
-
-  /**/
-  EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_2;
-  EXTI_InitStruct.LineCommand = ENABLE;
-  EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
-  EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_RISING;
-  LL_EXTI_Init(&EXTI_InitStruct);
 
 }
 

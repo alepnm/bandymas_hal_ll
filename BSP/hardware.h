@@ -12,6 +12,9 @@
 #define     ENTER_CRITICAL_SECTION() {uint32_t flag; flag = __get_PRIMASK();
 #define     EXIT_CRITICAL_SECTION()  __set_PRIMASK(flag);}
 
+#define     I2C_ADDR_NACK 1
+#define     I2C_OK 0
+
 #define     BEEPER_LEVEL_MSK        0x00007000
 #define     BEEPER_TONE_MSK         0x00000700
 #define     BEEPER_COUNT_MSK        0x000000FF
@@ -31,6 +34,8 @@ extern struct _beeper Beeper;
 
 
 void        Delay_ms(uint32_t delay);
+
+void        HW_Init(void);
 void        USART_Config(uint8_t ucPORT, uint32_t ulBaudRate, uint32_t ulDataBits,  uint32_t ulParity );
 
 void        SPI_Transmit8(uint8_t* txdata, uint16_t len);
@@ -41,19 +46,10 @@ uint16_t    ADC_StartConversion(uint32_t channel, uint32_t resolution);
 
 uint8_t     IIC_Init(void);
 uint8_t     IIC_Check(uint8_t iic_addr);
-uint8_t     IIC_Write(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf);
-uint8_t     IIC_Read(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf);
+uint8_t     IIC_Write(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len);
+uint8_t     IIC_Read(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len);
 
 uint8_t     IIC_ReadByteInst(uint16_t reg);
 void        IIC_WriteByteInst(uint16_t reg, uint8_t data);
-
-uint8_t     IIC_ReadByte(uint16_t reg);
-uint16_t    IIC_ReadWord(uint16_t reg);
-uint32_t    IIC_ReadDWord(uint16_t reg);
-void        IIC_WriteByte(uint16_t reg, uint8_t val);
-void        IIC_WriteWord(uint16_t reg, uint16_t val);
-void        IIC_WriteDWord(uint16_t reg, uint32_t val);
-
-
 
 #endif /* HARDWARE_H_INCLUDED */

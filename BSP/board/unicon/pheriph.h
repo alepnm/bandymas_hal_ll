@@ -1,7 +1,7 @@
 #ifndef PHERIPH_H_INCLUDED
 #define PHERIPH_H_INCLUDED
 
-#include "../../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h"
+#include "stm32f0xx_ll_rcc.h"
 #include "stm32f0xx_ll_bus.h"
 #include "stm32f0xx_ll_adc.h"
 #include "stm32f0xx_ll_gpio.h"

@@ -91,27 +91,15 @@
 			<Add option="-eb_start_files" />
 			<Add option="-lm" />
 		</Linker>
-		<Unit filename="..\BSP\board\stepper\stepper.c">
+		<Unit filename="..\BSP\board\unicon\pheriph.h" />
+		<Unit filename="..\BSP\board\unicon\unicon.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\BSP\board\stepper\stepper.h" />
 		<Unit filename="..\BSP\board\unicon\unicon.h" />
 		<Unit filename="..\BSP\comp\IIC_EEPROM\iic_eeprom.c">
 			<Option compilerVar="CC" />
-			<Option compile="0" />
-			<Option link="0" />
 		</Unit>
 		<Unit filename="..\BSP\comp\IIC_EEPROM\iic_eeprom.h" />
-		<Unit filename="..\BSP\comp\L6470\l6470.c">
-			<Option compilerVar="CC" />
-			<Option compile="0" />
-			<Option link="0" />
-		</Unit>
-		<Unit filename="..\BSP\comp\L6470\l6470.h" />
-		<Unit filename="..\BSP\comp\M25AAx\M25AAxx.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\BSP\comp\M25AAx\M25AAxx.h" />
 		<Unit filename="..\BSP\comp\Nextion_HMI\nextion.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -154,6 +154,10 @@ extern SmcHandle_TypeDef SMC_Control;
 /* Private functions */
 void        STP_Start(void);
 void        STP_UartSendString(const char* str);
+
+void        STP_SystemDataUpdate(void);
+void        STP_ModbusDataUpdate(void);
+
 void        STP_ReadADC(uint32_t channel, uint32_t resolution);
 void        STP_ReadDipSwitch(void);
 

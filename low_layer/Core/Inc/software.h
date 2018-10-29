@@ -1,7 +1,6 @@
 #ifndef SOFTWARE_H_INCLUDED
 #define SOFTWARE_H_INCLUDED
 
-#include "stepper.h"
 #include "mb.h"
 #include "user_mb_app.h"
 
