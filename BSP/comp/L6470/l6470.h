@@ -5,9 +5,6 @@
 #ifndef L6470_h
 #define L6470_h
 
-#include "common.h"
-
-
 #define PROC_8BIT(x)                (uint8_t)(x * 2.55)         // % -> byte (0 - 0xFF)
 
 // constant definitions for overcurrent thresholds. Write these values to
@@ -140,9 +137,6 @@
 #define CONFIG_PWM_DIV_5                (0x04<<13)
 #define CONFIG_PWM_DIV_6                (0x05<<13)
 #define CONFIG_PWM_DIV_7                (0x06<<13)
-
-
-//typedef uint8_t byte;
 
 
 typedef enum{

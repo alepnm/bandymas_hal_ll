@@ -1,11 +1,8 @@
 /*
 */
 
+#warning issiaiskinti kodel, kai uzremini includ'a niekas navyksta - kompiliuojasi kaip priklauso?..
 #include "l6470.h"
-#include "stepper.h"
-
-#define CS_LOW()      L6470_CS_LOW()
-#define CS_HIGH()     L6470_CS_HIGH()
 
 const uint8_t uStepTable[8] = { 1, 2, 4, 8, 16, 32, 64, 128 };
 
@@ -609,9 +606,9 @@ static byte Xfer(byte data_tx) {
 
     byte data_rx;
 
-    CS_LOW();
+    L6470_CS_LOW();
     SPI_TransmitReceive8(&data_tx, &data_rx, 1);
-    CS_HIGH();
+    L6470_CS_HIGH();
 
     return data_rx;
 }

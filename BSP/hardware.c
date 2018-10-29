@@ -181,6 +181,16 @@ uint16_t ADC_StartConversion(uint32_t channel, uint32_t resolution) {
 }
 
 
+
+/*  */
+uint8_t IIC_Init(void){
+
+    LL_I2C_SetMasterAddressingMode(I2C1, LL_I2C_ADDRESSING_MODE_7BIT);
+
+    return I2C_OK;
+}
+
+
 /*  */
 uint8_t IIC_Check(uint8_t iic_addr) {
 

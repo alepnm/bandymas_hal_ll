@@ -49,9 +49,6 @@
 /* USER CODE BEGIN PV */
 extern LL_USART_InitTypeDef USART_InitStruct;
 
-
-SmcHandle_TypeDef SMC_Control;
-
 MbPortParams_TypeDef MbPortParams = {
     .Uart = MB_PORT_DEF,
     .ModbusActive = false,

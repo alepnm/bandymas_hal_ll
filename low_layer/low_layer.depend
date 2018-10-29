@@ -1420,15 +1420,16 @@
 	"defs.h"
 	"main.h"
 
-1540769242 source:d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.c
+1540773107 source:d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.c
 	"stepper.h"
 	"user_mb_app.h"
 	"M25AAxx.h"
+	"l6470.h"
 
-1540769805 d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.h
+1540772370 d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.h
 	"hardware.h"
 
-1540770026 d:\projects\bandymas_hal_ll\low_layer\core\inc\defs.h
+1540772066 d:\projects\bandymas_hal_ll\low_layer\core\inc\defs.h
 	<stdint.h>
 	<stdbool.h>
 	<string.h>
@@ -1606,7 +1607,7 @@
 
 1539882423 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
 
-1540769242 d:\projects\bandymas_hal_ll\bsp\hardware.h
+1540772548 d:\projects\bandymas_hal_ll\bsp\hardware.h
 	"stm32_assert.h"
 	"defs.h"
 	"main.h"
@@ -1635,10 +1636,10 @@
 
 1539882423 d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbconfig.h
 
-1539882421 d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.h
+1540772250 d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.h
 	<stdint.h>
 
-1540759215 source:d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.c
+1540773390 source:d:\projects\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.c
 	"M25AAxx.h"
 	"hardware.h"
 	"stepper.h"
@@ -1649,7 +1650,7 @@
 1539882421 d:\projects\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.h
 	"defs.h"
 
-1540769345 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
+1540771281 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
 	"hardware.h"
 
 1539882422 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
@@ -1841,7 +1842,7 @@
 1539882423 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.c
 	"port.h"
 
-1540759214 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
+1540771161 source:d:\projects\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -1878,17 +1879,17 @@
 	"mb.h"
 	"mbport.h"
 
-1540769805 source:d:\projects\bandymas_hal_ll\low_layer\core\src\main.c
+1540771387 source:d:\projects\bandymas_hal_ll\low_layer\core\src\main.c
 	"main.h"
 	"software.h"
 	"nextion.h"
 
-1540759214 d:\projects\bandymas_hal_ll\low_layer\core\inc\software.h
+1540771161 d:\projects\bandymas_hal_ll\low_layer\core\inc\software.h
 	"stepper.h"
 	"mb.h"
 	"user_mb_app.h"
 
-1540769688 source:d:\projects\bandymas_hal_ll\low_layer\core\src\software.c
+1540771161 source:d:\projects\bandymas_hal_ll\low_layer\core\src\software.c
 	"software.h"
 	"M25AAxx.h"
 
@@ -2780,4 +2781,6 @@
 
 1539942818 source:c:\working\git\bandymas_hal_ll\bsp\hardware.c
 	"hardware.h"
+
+1540772066 d:\projects\bandymas_hal_ll\bsp\comp\l6470\l6470.h
 

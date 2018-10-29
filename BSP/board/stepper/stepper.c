@@ -3,13 +3,14 @@
 #include "stepper.h"
 #include "user_mb_app.h"
 #include "M25AAxx.h"
+#include "l6470.h"
 
 
 extern LL_USART_InitTypeDef USART_InitStruct;
 extern USART_TypeDef* ports[3u];
 extern const uint32_t baudrates[6u];
 
-extern M25AAxx_TypeDef M25AAxx;
+SmcHandle_TypeDef SMC_Control;
 
 uint8_t iic_buf[100];
 
@@ -73,8 +74,7 @@ void STP_Start(void) {
     SET_BEEPER_COUNTER(25);
 
 
-
-    LL_I2C_SetMasterAddressingMode(I2C1, LL_I2C_ADDRESSING_MODE_7BIT);
+    IIC_Init();
 
     do{
         LL_I2C_Enable(I2C1);

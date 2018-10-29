@@ -6,6 +6,24 @@
 #include <string.h>
 #include <stdlib.h>
 
+#ifndef NULL
+    #define NULL ((void *)0)
+#endif
+
+#ifndef TRUE
+    #define TRUE        (1u)
+#endif
+
+#ifndef FALSE
+    #define FALSE       (0u)
+#endif
+
+#define DUMMY  0
+
+#define LO16(x) (uint16_t)( x & 0x0000FFFF )
+#define HI16(x) (uint16_t)((x & 0xFFFF0000 ) >> 16)
+
+typedef uint8_t byte;
 
 typedef enum { RES_OK = 0, RES_ERROR, RES_BUSY, RES_TIMEOUT, RES_BAD_PARAMS } eRESULT_TypeDef;  // atitinka HAL_StatusTypeDef
 

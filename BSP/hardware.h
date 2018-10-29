@@ -5,12 +5,12 @@
 #include "defs.h"
 #include "main.h"
 
-#define __enter_critical() {uint32_t irq; irq = __get_PRIMASK();
-#define __exit_critical() __set_PRIMASK(irq);}
-#define ATOMIC_SECTION(X) __enter_critical(); {X}; __exit_critical();
+#define     __enter_critical() {uint32_t irq; irq = __get_PRIMASK();
+#define     __exit_critical() __set_PRIMASK(irq);}
+#define     ATOMIC_SECTION(X) __enter_critical(); {X}; __exit_critical();
 
-#define ENTER_CRITICAL_SECTION() {uint32_t flag; flag = __get_PRIMASK();
-#define EXIT_CRITICAL_SECTION()  __set_PRIMASK(flag);}
+#define     ENTER_CRITICAL_SECTION() {uint32_t flag; flag = __get_PRIMASK();
+#define     EXIT_CRITICAL_SECTION()  __set_PRIMASK(flag);}
 
 #define     BEEPER_LEVEL_MSK        0x00007000
 #define     BEEPER_TONE_MSK         0x00000700
@@ -39,6 +39,7 @@ void        SPI_TransmitReceive8(uint8_t* txdata, uint8_t* rxdata, uint16_t len)
 
 uint16_t    ADC_StartConversion(uint32_t channel, uint32_t resolution);
 
+uint8_t     IIC_Init(void);
 uint8_t     IIC_Check(uint8_t iic_addr);
 uint8_t     IIC_Write(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf);
 uint8_t     IIC_Read(uint8_t iic_addr, uint16_t reg, uint16_t len, uint8_t *buf);

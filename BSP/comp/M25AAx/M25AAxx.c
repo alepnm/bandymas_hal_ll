@@ -36,8 +36,8 @@
 #define M25AAxx_STATUS_BP1                  (0x01)<<3    // bit BP1 - Block1 Protection (RW)
 
 
-#define CS_LOW()                            M25AA_CS_LOW()
-#define CS_HIGH()                           M25AA_CS_HIGH()
+//#define CS_LOW()                            M25AA_CS_LOW()
+//#define CS_HIGH()                           M25AA_CS_HIGH()
 
 
 M25AAxx_TypeDef M25AAxx;
@@ -80,23 +80,23 @@ uint8_t M25AAxx_ReadUID( unsigned char* buffer) {
 
     uint8_t data_tx = (uint8_t)READ_INSTRUCTION;
 
-    CS_LOW();
+    M25AA_CS_LOW();
 
     if( (result = spi_send(&data_tx, 1) ) != 0 ) {
-        CS_HIGH();
+        M25AA_CS_HIGH();
         return 1;
     };
 
     data_tx = M25AAxx_UID_NODE_ADDRESS;
 
     if( (result = spi_send(&data_tx, 1) ) != 0 ) {
-        CS_HIGH();
+        M25AA_CS_HIGH();
         return 1;
     };
 
     result = spi_receive(buffer, M25AAxx_UID_BUFFER_SIZE);
 
-    CS_HIGH();
+    M25AA_CS_HIGH();
 
     return result;
 }
@@ -242,13 +242,13 @@ static uint8_t PullStatusRegister( uint8_t* status ) {
 
     uint8_t data_tx = (uint8_t)READ_STATUS_INSTRUCTION;
 
-    CS_LOW();
+    M25AA_CS_LOW();
 
     if( spi_send(&data_tx, 1) != 0 || spi_receive(status, 1) != 0 ) {
         result = 1;
     }
 
-    CS_HIGH();
+    M25AA_CS_HIGH();
 
     return result;
 }
@@ -261,13 +261,13 @@ static uint8_t PushStatusRegister( uint8_t* status ) {
 
     (void)WriteEnable();
 
-    CS_LOW();
+    M25AA_CS_LOW();
 
     if( spi_send(&data_tx, 1) != 0 || spi_send(status, 1) != 0 ) {
         result = 1;
     }
 
-    CS_HIGH();
+    M25AA_CS_HIGH();
 
     return result;
 }
@@ -290,13 +290,13 @@ static uint8_t Read( uint8_t addr, uint8_t* buffer, int len ) {
 
     uint8_t cmd = (uint8_t)READ_INSTRUCTION;
 
-    CS_LOW();
+    M25AA_CS_LOW();
 
     if( spi_send(&cmd, 1) != 0 || spi_send(&addr, 1) != 0 || spi_receive(buffer, len) != 0 ) {
         result = 1;
     }
 
-    CS_HIGH();
+    M25AA_CS_HIGH();
 
     return result;
 }
@@ -322,18 +322,18 @@ static uint8_t Write( uint8_t addr, uint8_t* buffer, uint8_t len ) {
 
             (void)WriteEnable();
 
-            CS_LOW();
+            M25AA_CS_LOW();
 
             if( spi_send(&cmd, 1) != 0 || spi_send(&addr, 1) != 0 || spi_send(buffer, wr_size) != 0 ) {
 
-                CS_HIGH();
+                M25AA_CS_HIGH();
 
                 Delay_ms(7);
 
                 return 1;
             }
 
-            CS_HIGH();
+            M25AA_CS_HIGH();
 
             while( GetWriteFlag() != RESET );
 
@@ -350,13 +350,13 @@ static uint8_t Write( uint8_t addr, uint8_t* buffer, uint8_t len ) {
 
     (void)WriteEnable();
 
-    CS_LOW();
+    M25AA_CS_LOW();
 
     if( spi_send(&cmd, 1) != 0 || spi_send(&addr, 1) != 0 || spi_send(buffer, len) != 0 ) {
         result = 1;
     }
 
-    CS_HIGH();
+    M25AA_CS_HIGH();
 
     while( GetWriteFlag() != RESET );
 
@@ -371,11 +371,11 @@ static uint8_t WriteEnable() {
 
     uint8_t cmd = (uint8_t)WRITE_ENABLE_INSTRUCTION;
 
-    CS_LOW();
+    M25AA_CS_LOW();
 
     result = spi_send(&cmd, 1);
 
-    CS_HIGH();
+    M25AA_CS_HIGH();
 
     return result;
 }
@@ -386,11 +386,11 @@ static uint8_t WriteDisable() {
 
     uint8_t cmd = (uint8_t)WRITE_DISABLE_INSTRUCTION;
 
-    CS_LOW();
+    M25AA_CS_LOW();
 
     result = spi_send(&cmd, 1);
 
-    CS_HIGH();
+    M25AA_CS_HIGH();
 
     return result;
 }

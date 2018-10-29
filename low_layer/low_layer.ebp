@@ -82,14 +82,6 @@
 			<Add option="-fno-strict-aliasing" />
 			<Add symbol="USE_FULL_LL_DRIVER" />
 			<Add symbol="STM32F051x8" />
-			<Add directory=".\Inc" />
-			<Add directory="Drivers\CMSIS\Include" />
-			<Add directory="Drivers\CMSIS\Device\ST\STM32F0xx\Include" />
-			<Add directory="Drivers\STM32F0xx_HAL_Driver\Inc" />
-			<Add directory="Drivers\freemodbus\port" />
-			<Add directory="Drivers\freemodbus\modbus\include" />
-			<Add directory="Drivers\freemodbus\modbus\rtu" />
-			<Add directory="Drivers\softspi" />
 		</Compiler>
 		<Cpp>
 			<Add option="-Wredundant-decls" />
@@ -201,7 +193,6 @@
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_ll_utils.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Core\Inc\common.h" />
 		<Unit filename="Core\Inc\defs.h" />
 		<Unit filename="Core\Inc\main.h" />
 		<Unit filename="Core\Inc\software.h" />
@@ -298,11 +289,11 @@
 			</DoxyBlocks>
 			<code_completion />
 			<debugger>
-				<target_debugging_settings target="Release" active_interface="ST-link">
+				<target_debugging_settings target="Debug" active_interface="ST-link">
 					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="C:\Program Files (x86)\SEGGER\JLink_V620a" executable="JLinkGDBServer.exe" description="" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="STMicroelectronics" gdb_before_conn="" gdb_after_conn="">
 						<family_options family_id="Generic" />
 						<family_options family_id="STMicroelectronics">
-							<option opt_id="ID_DEVICE" opt_value="STM32F051C8" />
+							<option opt_id="ID_DEVICE" opt_value="STM32F051R8" />
 							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
 							<option opt_id="ID_SPEED" opt_value="1000" />
 							<option opt_id="ID_AUTO_SPEED" opt_value="1" />
@@ -338,11 +329,11 @@
 						</family_options>
 					</debug_interface>
 				</target_debugging_settings>
-				<target_debugging_settings target="Debug" active_interface="ST-link">
+				<target_debugging_settings target="Release" active_interface="ST-link">
 					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="C:\Program Files (x86)\SEGGER\JLink_V620a" executable="JLinkGDBServer.exe" description="" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="STMicroelectronics" gdb_before_conn="" gdb_after_conn="">
 						<family_options family_id="Generic" />
 						<family_options family_id="STMicroelectronics">
-							<option opt_id="ID_DEVICE" opt_value="STM32F051R8" />
+							<option opt_id="ID_DEVICE" opt_value="STM32F051C8" />
 							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
 							<option opt_id="ID_SPEED" opt_value="1000" />
 							<option opt_id="ID_AUTO_SPEED" opt_value="1" />
