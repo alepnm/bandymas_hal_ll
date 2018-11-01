@@ -53,7 +53,7 @@ uint16_t    ADC_StartConversion(uint32_t channel, uint32_t resolution);
 uint8_t     IIC_Check(uint8_t iic_addr);
 uint8_t     IIC_Write(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len);
 uint8_t     IIC_Read(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len);
-uint8_t     IIC_ReadByteInst(uint16_t reg);
-void        IIC_WriteByteInst(uint16_t reg, uint8_t data);
+uint8_t     IIC_ReadByte(uint16_t reg);
+void        IIC_WriteByte(uint16_t reg, uint8_t data);
 
 #endif /* HARDWARE_H_INCLUDED */

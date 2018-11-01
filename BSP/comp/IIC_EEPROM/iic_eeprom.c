@@ -26,6 +26,11 @@ uint8_t EEP24XX_Read( uint16_t mem_addr, void *rxdata, size_t size_of_data ) {
     return EEP24XX_Process( mem_addr, rxdata, size_of_data, IIC_READ );
 }
 
+/*   */
+uint8_t EEP24XX_ReadByte(uint16_t mem_addr){
+    return IIC_ReadByte(mem_addr);
+}
+
 /*  */
 uint16_t EEP24XX_ReadWord(uint16_t mem_addr){
 
@@ -44,6 +49,11 @@ uint32_t EEP24XX_ReadDWord(uint16_t mem_addr){
     EEP24XX_Process( mem_addr, data, 4, IIC_READ );
 
     return ( data[3]<<24 | data[2]<<16 | data[1]<<8 | data[0] );
+}
+
+/*   */
+void EEP24XX_WriteByte(uint16_t mem_addr, uint8_t val){
+    IIC_WriteByte(mem_addr, val);
 }
 
 /*  */

@@ -148,6 +148,12 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
     HW_Init();
+
+    //EEP24XX_WriteByte(EEADR_INITBYTE, 0xFF);
+
+    //EEP24XX_Clear();
+    EEP24XX_Read( 0, iic_buf, I2C_MEMORY_SIZE );
+
     SW_SystemStart();
 
   /* USER CODE END 2 */
@@ -155,38 +161,11 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-
-    EEP24XX_Clear();
-    EEP24XX_Read( 0, iic_buf, I2C_MEMORY_SIZE );
-
-
-    HMI_CommandBuffer[0] = 0;
-    HMI_CommandBuffer[1] = 1;
-    HMI_CommandBuffer[2] = 2;
-    HMI_CommandBuffer[3] = 3;
-    HMI_CommandBuffer[4] = 4;
-    HMI_CommandBuffer[5] = 5;
-    HMI_CommandBuffer[6] = 6;
-    HMI_CommandBuffer[7] = 7;
-    HMI_CommandBuffer[8] = 8;
-    HMI_CommandBuffer[9] = 9;
-    HMI_CommandBuffer[10] = 10;
-
-    //EEP24XX_Write( 508, HMI_CommandBuffer, 11 );
-
-    EEP24XX_Write( 12, (uint8_t*)&MbPortParams, sizeof(MbPortParams) );
-    EEP24XX_Read( 0, iic_buf, I2C_MEMORY_SIZE );
-
-
-    MbPortParams_TypeDef MbPort_EEPROM;
-    EEP24XX_Read( 12, (uint8_t*)&MbPort_EEPROM, sizeof(MbPort_EEPROM) );
-
-
     while (1) {
 
         if(delay <= timestamp) {
 
-            delay = timestamp + 50;
+            delay = timestamp + 500;
 
             RTC_Time.Seconds = LL_RTC_TIME_GetSecond(RTC);
             rtc_second = __LL_RTC_GET_SECOND(RTC_Time.Seconds);
@@ -196,6 +175,8 @@ int main(void)
 
             RTC_Time.Hours = LL_RTC_TIME_GetHour(RTC);
             rtc_hour = __LL_RTC_GET_HOUR(RTC_Time.Hours);
+
+            //EEP24XX_Write( EEADR_RTCDATA, (uint8_t*)&RTC_Time, sizeof(RTC_Time) );
 
             LED2_TOGGLE();
         }

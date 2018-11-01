@@ -5,7 +5,6 @@
 #include "user_mb_app.h"
 
 
-
 void SW_SystemStart(void);
 void SW_SystemExecute(void);
 void SW_SystemDataUpdate(void);
