@@ -19,7 +19,10 @@
 #endif
 
 #define DUMMY  0
+#define UNUSED(x) ((void)(x))
 
+#define LO8(x)  (uint8_t)( x & 0x00FF )
+#define HI8(x)  (uint8_t)((x & 0xFF00 ) >> 8)
 #define LO16(x) (uint16_t)( x & 0x0000FFFF )
 #define HI16(x) (uint16_t)((x & 0xFFFF0000 ) >> 16)
 

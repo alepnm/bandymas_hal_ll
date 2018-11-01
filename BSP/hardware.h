@@ -32,23 +32,27 @@ struct _beeper{
 
 extern struct _beeper Beeper;
 
-
+void        SystickDelay_ms(uint32_t delay);
 void        Delay_ms(uint32_t delay);
 
 void        HW_Init(void);
-void        USART_Config(uint8_t ucPORT, uint32_t ulBaudRate, uint32_t ulDataBits,  uint32_t ulParity );
 
+/* ********* USART ********* */
+void        USART_Config(uint8_t ucPORT, uint32_t ulBaudRate, uint32_t ulDataBits,  uint32_t ulParity );
+void        USART_SendString(const char* str);
+
+/* ********** SPI ********** */
 void        SPI_Transmit8(uint8_t* txdata, uint16_t len);
 void        SPI_Receive8(uint8_t* rxdata, uint16_t len);
 void        SPI_TransmitReceive8(uint8_t* txdata, uint8_t* rxdata, uint16_t len);
 
+/* ********** ADC ********** */
 uint16_t    ADC_StartConversion(uint32_t channel, uint32_t resolution);
 
-uint8_t     IIC_Init(void);
+/* ********** IIC ********** */
 uint8_t     IIC_Check(uint8_t iic_addr);
 uint8_t     IIC_Write(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len);
 uint8_t     IIC_Read(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len);
-
 uint8_t     IIC_ReadByteInst(uint16_t reg);
 void        IIC_WriteByteInst(uint16_t reg, uint8_t data);
 

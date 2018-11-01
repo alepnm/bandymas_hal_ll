@@ -27,6 +27,42 @@ uint8_t EEP24XX_Read( uint16_t mem_addr, void *rxdata, size_t size_of_data ) {
 }
 
 /*  */
+uint16_t EEP24XX_ReadWord(uint16_t mem_addr){
+
+    uint8_t data[2];
+
+    EEP24XX_Process( mem_addr, data, 2, IIC_READ );
+
+    return ( data[1]<<8 | data[0] );
+}
+
+/*  */
+uint32_t EEP24XX_ReadDWord(uint16_t mem_addr){
+
+    uint8_t data[4];
+
+    EEP24XX_Process( mem_addr, data, 4, IIC_READ );
+
+    return ( data[3]<<24 | data[2]<<16 | data[1]<<8 | data[0] );
+}
+
+/*  */
+void EEP24XX_WriteWord(uint16_t mem_addr, uint16_t val){
+
+    uint8_t data[2] = { (uint8_t)(val&0x00FF), (uint8_t)((val>>8)&0x00FF) };
+
+    EEP24XX_Process( mem_addr, data, 2, IIC_WRITE );
+}
+
+/*  */
+void EEP24XX_WriteDWord(uint16_t mem_addr, uint32_t val){
+
+    uint8_t data[4] = { (uint8_t)(val&0x000000FF), (uint8_t)((val>>8)&0x000000FF), (uint8_t)((val>>16)&0x000000FF), (uint8_t)((val>>24)&0x000000FF) };
+
+    EEP24XX_Process( mem_addr, data, 4, IIC_WRITE );
+}
+
+/*  */
 uint8_t EEP24XX_Clear(void) {
 
     uint8_t result = RES_OK;
@@ -79,6 +115,7 @@ static uint8_t EEP24XX_Process( uint16_t mem_addr, void *data, uint16_t len, uin
             break;
             case IIC_WRITE:
                 IIC_Write(eeaddr, mem_addr, data, (uint16_t)wr_size);
+                //Delay_ms(5);
             break;
         }
 
@@ -105,3 +142,4 @@ static uint8_t EEP24XX_Process( uint16_t mem_addr, void *data, uint16_t len, uin
     /* pagalvoti kaip ir ka grazinam!!! */
     return RES_OK;
 }
+

@@ -1,22 +1,22 @@
 #include "software.h"
 
-static void System_Init(void);
-static void EeDataRestore(void);
+static void SW_System_Init(void);
+static void SW_EeDataRestore(void);
 
 
-void SystemStart(void){
+void SW_SystemStart(void){
 
     //STP_Start();
 
     /* inicializuojam sistemine aplinka: pointerius, pradines reiksmes  */
-    System_Init();
+    SW_System_Init();
 }
 
 /*  */
-static void System_Init(void){
+static void SW_System_Init(void){
 
     /* atstatom EEPROM duomenys */
-    EeDataRestore();
+    SW_EeDataRestore();
 
     usRegHoldingBuf[HR_MBADDR] = 10;
     usRegHoldingBuf[HR_MBBAUDRATE] = 3;
@@ -39,7 +39,7 @@ static void System_Init(void){
 }
 
 /*  */
-static void EeDataRestore(void){
+static void SW_EeDataRestore(void){
 
 
 }
@@ -48,13 +48,12 @@ static void EeDataRestore(void){
 
 
 /*  */
-void SystemDataUpdate(void){
-
+void SW_SystemDataUpdate(void){
 
 }
 
 
-void ModbusDataUpdate(void){
+void SW_ModbusDataUpdate(void){
 
 
 }

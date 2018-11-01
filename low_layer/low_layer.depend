@@ -1429,7 +1429,7 @@
 1540800579 d:\projects\bandymas_hal_ll\bsp\board\stepper\stepper.h
 	"hardware.h"
 
-1540772066 d:\projects\bandymas_hal_ll\low_layer\core\inc\defs.h
+1541021828 d:\projects\bandymas_hal_ll\low_layer\core\inc\defs.h
 	<stdint.h>
 	<stdbool.h>
 	<string.h>
@@ -1607,7 +1607,7 @@
 
 1540801486 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
 
-1540812920 d:\projects\bandymas_hal_ll\bsp\hardware.h
+1540837873 d:\projects\bandymas_hal_ll\bsp\hardware.h
 	"stm32_assert.h"
 	"defs.h"
 	"main.h"
@@ -1650,7 +1650,7 @@
 1539882421 d:\projects\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.h
 	"defs.h"
 
-1540812920 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
+1541029556 source:d:\projects\bandymas_hal_ll\bsp\hardware.c
 	"hardware.h"
 
 1539882422 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
@@ -1878,18 +1878,18 @@
 	"mb.h"
 	"mbport.h"
 
-1540814293 source:d:\projects\bandymas_hal_ll\low_layer\core\src\main.c
+1541030594 source:d:\projects\bandymas_hal_ll\low_layer\core\src\main.c
 	"main.h"
 	"unicon.h"
 	"nextion.h"
 	"iic_eeprom.h"
 	"software.h"
 
-1540800817 d:\projects\bandymas_hal_ll\low_layer\core\inc\software.h
+1540837599 d:\projects\bandymas_hal_ll\low_layer\core\inc\software.h
 	"mb.h"
 	"user_mb_app.h"
 
-1540807118 source:d:\projects\bandymas_hal_ll\low_layer\core\src\software.c
+1540837624 source:d:\projects\bandymas_hal_ll\low_layer\core\src\software.c
 	"software.h"
 
 1540801486 source:d:\projects\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
@@ -1913,13 +1913,13 @@
 
 1539882423 source:d:\projects\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
 
-1540813741 source:d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
+1541025664 source:d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
 	<stdlib.h>
 	<string.h>
 	"iic_eeprom.h"
 	"hardware.h"
 
-1540813710 d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.h
+1540839247 d:\projects\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.h
 	<stdint.h>
 
 1540801487 d:\projects\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_hal_conf.h
@@ -2789,4 +2789,7 @@
 
 1540766415 d:\projects\bandymas_hal_ll\bsp\board\unicon\unicon.h
 	"hardware.h"
+
+1539882422 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_hal_i2c.c
+	"stm32f0xx_hal.h"
 

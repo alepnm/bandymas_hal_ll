@@ -148,7 +148,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
     HW_Init();
-    SystemStart();
+    SW_SystemStart();
 
   /* USER CODE END 2 */
 
@@ -156,13 +156,30 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 
-    IIC_Init();
-
     EEP24XX_Clear();
     EEP24XX_Read( 0, iic_buf, I2C_MEMORY_SIZE );
 
-    IIC_WriteByteInst(55, 0xAA);
-    uint8_t qqq = IIC_ReadByteInst(55);
+
+    HMI_CommandBuffer[0] = 0;
+    HMI_CommandBuffer[1] = 1;
+    HMI_CommandBuffer[2] = 2;
+    HMI_CommandBuffer[3] = 3;
+    HMI_CommandBuffer[4] = 4;
+    HMI_CommandBuffer[5] = 5;
+    HMI_CommandBuffer[6] = 6;
+    HMI_CommandBuffer[7] = 7;
+    HMI_CommandBuffer[8] = 8;
+    HMI_CommandBuffer[9] = 9;
+    HMI_CommandBuffer[10] = 10;
+
+    //EEP24XX_Write( 508, HMI_CommandBuffer, 11 );
+
+    EEP24XX_Write( 12, (uint8_t*)&MbPortParams, sizeof(MbPortParams) );
+    EEP24XX_Read( 0, iic_buf, I2C_MEMORY_SIZE );
+
+
+    MbPortParams_TypeDef MbPort_EEPROM;
+    EEP24XX_Read( 12, (uint8_t*)&MbPort_EEPROM, sizeof(MbPort_EEPROM) );
 
 
     while (1) {
@@ -397,6 +414,7 @@ static void MX_I2C1_Init(void)
 
     /**I2C Initialization
     */
+
   LL_I2C_DisableOwnAddress2(I2C1);
 
   LL_I2C_DisableGeneralCall(I2C1);

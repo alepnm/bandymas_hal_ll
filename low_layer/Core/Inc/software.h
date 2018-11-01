@@ -6,9 +6,9 @@
 
 
 
-void SystemStart(void);
-void SystemExecute(void);
-void SystemDataUpdate(void);
-void ModbusDataUpdate(void);
+void SW_SystemStart(void);
+void SW_SystemExecute(void);
+void SW_SystemDataUpdate(void);
+void SW_ModbusDataUpdate(void);
 
 #endif /* SOFTWARE_H_INCLUDED */

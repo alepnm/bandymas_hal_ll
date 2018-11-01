@@ -112,6 +112,7 @@
 		<Unit filename="..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h" />
 		<Unit filename="..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h" />
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_i2c.h" />
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_ll_adc.h" />
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_ll_bus.h" />
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_ll_comp.h" />
@@ -133,6 +134,9 @@
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_ll_usart.h" />
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_ll_utils.h" />
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_ll_wwdg.h" />
+		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="..\Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_ll_adc.c">
 			<Option compilerVar="CC" />
 		</Unit>
