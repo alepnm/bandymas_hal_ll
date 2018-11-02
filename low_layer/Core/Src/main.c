@@ -44,12 +44,18 @@
 #include "nextion.h"
 #include "iic_eeprom.h"
 #include "software.h"
+
+#include "mb.h"
+#include "user_mb_app.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern LL_USART_InitTypeDef USART_InitStruct;
+LL_USART_InitTypeDef USART_InitStruct;
+LL_RTC_TimeTypeDef RTC_Time;
+LL_RTC_DateTypeDef RTC_Date;
+
 
 MbPortParams_TypeDef MbPortParams = {
     .Uart = MB_PORT_DEF,
@@ -60,10 +66,6 @@ MbPortParams_TypeDef MbPortParams = {
     .StopBits = { .pmbus = &usRegHoldingBuf[HR_MBSTOPBITS], .cvalue = MBSTOPBITS_DEF },
     .DataBits  = { .pmbus = NULL, .cvalue = MBWORDLENGHT_DEF }
 };
-
-
- extern LL_RTC_TimeTypeDef RTC_Time;
- extern LL_RTC_DateTypeDef RTC_Date;
 
 
 uint8_t UsartState = 0; // 0-IDLE, 1-RXNE, 2-TC

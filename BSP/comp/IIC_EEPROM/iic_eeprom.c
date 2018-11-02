@@ -2,7 +2,7 @@
 #include <string.h>
 
 #include "iic_eeprom.h"
-#include "hardware.h"
+#include "iic.h"
 
 enum {IIC_READ = 0, IIC_WRITE} eIIC_PROCESS;  // kaip komunikuojam su iic
 
@@ -110,7 +110,7 @@ static uint8_t EEP24XX_Process( uint16_t mem_addr, void *data, uint16_t len, uin
 
     uint8_t eeaddr = (I2C_EEP_BASE_ADDRESS + block)<<1;
 
-    if( IIC_Check(eeaddr) != I2C_OK ) return result;
+    if( ( result = IIC_Check(eeaddr) ) != RES_OK ) return result;
 
     while(len > 0) {
 

@@ -49,22 +49,9 @@ void vMBPortSerialEnable( BOOL xRxEnable, BOOL xTxEnable ) {
 
 BOOL xMBPortSerialInit( UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBParity eParity ) {
 
-    uint32_t Parity;
-
     if(ucPORT >= 2) return FALSE;
 
-    switch(eParity) {
-    case MB_PAR_ODD:
-        Parity = LL_USART_PARITY_ODD;
-        break;
-    case MB_PAR_EVEN:
-        Parity = LL_USART_PARITY_EVEN;
-        break;
-    default:
-        Parity = LL_USART_PARITY_NONE;
-    }
-
-    USART_Config( (uint8_t)ucPORT, (uint32_t)ulBaudRate, (uint32_t)ucDataBits, Parity );
+    USART_Config( (uint8_t)ucPORT, (uint32_t)ulBaudRate, (uint32_t)ucDataBits, (uint32_t)eParity );
 
     LL_USART_Enable(ports[ucPORT]);
 

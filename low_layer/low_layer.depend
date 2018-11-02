@@ -2116,17 +2116,20 @@
 	"hardware.h"
 	"stm32_assert.h"
 
-1539942770 c:\working\git\bandymas_hal_ll\bsp\hardware.h
-	"defs.h"
-	"main.h"
+1541146849 c:\working\git\bandymas_hal_ll\bsp\hardware.h
+	"stm32_assert.h"
+	"usart.h"
+	"spi.h"
+	"iic.h"
+	"adc.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\inc\defs.h
+1541146752 c:\working\git\bandymas_hal_ll\low_layer\core\inc\defs.h
 	<stdint.h>
 	<stdbool.h>
 	<string.h>
 	<stdlib.h>
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\inc\main.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\inc\main.h
 	"stm32f0xx_ll_adc.h"
 	"stm32f0xx_ll_i2c.h"
 	"stm32f0xx_ll_crs.h"
@@ -2144,10 +2147,10 @@
 	"stm32f0xx_ll_usart.h"
 	"stm32f0xx_ll_gpio.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_adc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_adc.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f0xx.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f0xx.h
 	"stm32f030x6.h"
 	"stm32f030x8.h"
 	"stm32f031x6.h"
@@ -2166,92 +2169,92 @@
 	"stm32f030xc.h"
 	"stm32f0xx_hal.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x6.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x6.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\system_stm32f0xx.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\system_stm32f0xx.h
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x8.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030x8.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f031x6.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f031x6.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f038xx.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f038xx.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f042x6.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f042x6.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f048xx.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f048xx.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f051x8.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f051x8.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f058xx.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f058xx.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070x6.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070x6.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070xb.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f070xb.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f071xb.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f071xb.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f072xb.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f072xb.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f078xx.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f078xx.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f091xc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f091xc.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f098xx.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f098xx.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030xc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\cmsis\device\st\stm32f0xx\include\stm32f030xc.h
 	"core_cm0.h"
 	"system_stm32f0xx.h"
 	<stdint.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal.h
 	"stm32f0xx_hal_conf.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_hal_conf.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_hal_conf.h
 	"main.h"
 	"stm32f0xx_hal_rcc.h"
 	"stm32f0xx_hal_exti.h"
@@ -2281,229 +2284,229 @@
 	"stm32f0xx_hal_usart.h"
 	"stm32f0xx_hal_wwdg.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_rcc_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_def.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_def.h
 	"stm32f0xx.h"
 	"Legacy/stm32_hal_legacy.h"
 	<stdio.h>
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\legacy\stm32_hal_legacy.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\legacy\stm32_hal_legacy.h
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rcc_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_gpio_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_gpio_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_dma_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dma_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cortex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cortex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_adc_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_adc_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_can.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_can.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cec.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_cec.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_comp.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_comp.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_crc_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_crc_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_dac_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_dac_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_flash_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_flash_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_i2c_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2c_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2s.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_i2s.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_irda_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_irda_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_iwdg.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_iwdg.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_pcd_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pcd_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_pwr_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_pwr_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_rtc_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_rtc_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_smartcard_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smartcard_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smbus.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_smbus.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_spi_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_spi_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_tim_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tim_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tsc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_tsc.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_uart_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_uart_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart.h
 	"stm32f0xx_hal_def.h"
 	"stm32f0xx_hal_usart_ex.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart_ex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_usart_ex.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_wwdg.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_hal_wwdg.h
 	"stm32f0xx_hal_def.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_i2c.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_i2c.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crs.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crs.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rcc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rcc.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_bus.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_bus.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_system.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_system.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_exti.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_exti.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_cortex.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_cortex.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_utils.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_utils.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_pwr.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_pwr.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dma.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dma.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rtc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_rtc.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_spi.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_spi.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_tim.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_tim.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_usart.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_usart.h
 	"stm32f0xx.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_gpio.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_gpio.h
 	"stm32f0xx.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\inc\stm32_assert.h
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\inc\user_mb_app.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\inc\user_mb_app.h
 	"mb.h"
 	"mbconfig.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mb.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mb.h
 	"port.h"
 	"mbport.h"
 	"mbproto.h"
 	"mbutils.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.h
-	"stepper.h"
+1541138753 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.h
+	"hardware.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbport.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbport.h
 	"port.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbproto.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbproto.h
 	"mb.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbutils.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbutils.h
 	"mb.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbconfig.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbconfig.h
 
 1539928698 c:\working\git\bandymas_hal_ll\bsp\comp\m25aax\m25aaxx.h
 	<stdint.h>
@@ -2513,99 +2516,99 @@
 	"hardware.h"
 	"stepper.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.c
+1539925098 source:c:\working\git\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.c
 	"nextion.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.h
+1539925098 c:\working\git\bandymas_hal_ll\bsp\comp\nextion_hmi\nextion.h
 	"defs.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_adc.c
 	"stm32f0xx_ll_adc.h"
 	"stm32f0xx_ll_bus.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_comp.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_comp.c
 	"stm32f0xx_ll_comp.h"
 	"stm32_assert.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_comp.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_comp.h
 	"stm32f0xx.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crc.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crc.c
 	"stm32f0xx_ll_crc.h"
 	"stm32_assert.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crc.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_crc.h
 	"stm32f0xx.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crs.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_crs.c
 	"stm32f0xx_ll_crs.h"
 	"stm32f0xx_ll_bus.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dac.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dac.c
 	"stm32f0xx_ll_dac.h"
 	"stm32f0xx_ll_bus.h"
 	"stm32_assert.h"
 
-1539928698 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dac.h
+1539925098 c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\inc\stm32f0xx_ll_dac.h
 	"stm32f0xx.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dma.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_dma.c
 	"stm32f0xx_ll_dma.h"
 	"stm32f0xx_ll_bus.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_exti.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_exti.c
 	"stm32f0xx_ll_exti.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_gpio.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_gpio.c
 	"stm32f0xx_ll_gpio.h"
 	"stm32f0xx_ll_bus.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_i2c.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_i2c.c
 	"stm32f0xx_ll_i2c.h"
 	"stm32f0xx_ll_bus.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_pwr.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_pwr.c
 	"stm32f0xx_ll_pwr.h"
 	"stm32f0xx_ll_bus.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rcc.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rcc.c
 	"stm32f0xx_ll_rcc.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rtc.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_rtc.c
 	"stm32f0xx_ll_rtc.h"
 	"stm32f0xx_ll_cortex.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_spi.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_spi.c
 	"stm32f0xx_ll_spi.h"
 	"stm32f0xx_ll_bus.h"
 	"stm32f0xx_ll_rcc.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_tim.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_tim.c
 	"stm32f0xx_ll_tim.h"
 	"stm32f0xx_ll_bus.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_usart.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_usart.c
 	"stm32f0xx_ll_usart.h"
 	"stm32f0xx_ll_rcc.h"
 	"stm32f0xx_ll_bus.h"
 	"stm32_assert.h"
 
-1539928698 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_utils.c
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_ll_utils.c
 	"stm32f0xx_ll_rcc.h"
 	"stm32f0xx_ll_utils.h"
 	"stm32f0xx_ll_system.h"
 	"stm32_assert.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -2616,15 +2619,15 @@
 	"mbcrc.h"
 	"mbport.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\ascii\mbascii.h
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbframe.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbframe.h
 	"mb.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.h
 	"port.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfunccoils.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfunccoils.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -2634,9 +2637,9 @@
 	"mbconfig.h"
 	"user_mb_app.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdiag.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdiag.c
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdisc.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncdisc.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -2646,7 +2649,7 @@
 	"mbconfig.h"
 	"user_mb_app.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncholding.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncholding.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -2656,7 +2659,7 @@
 	"mbconfig.h"
 	"user_mb_app.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncinput.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncinput.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -2666,7 +2669,7 @@
 	"mbconfig.h"
 	"user_mb_app.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncother.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbfuncother.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -2675,7 +2678,7 @@
 	"mbproto.h"
 	"mbconfig.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbutils.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\functions\mbutils.c
 	<assert.h>
 	<stdlib.h>
 	<string.h>
@@ -2684,7 +2687,7 @@
 	"mbproto.h"
 	"user_mb_app.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\mb.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\mb.c
 	<stdlib.h>
 	<string.h>
 	"port.h"
@@ -2698,17 +2701,17 @@
 	"mbascii.h"
 	"mbtcp.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbfunc.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\include\mbfunc.h
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.h
 	"mb.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.h
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbcrc.c
 	"port.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
+1541138753 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\rtu\mbrtu.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -2717,9 +2720,8 @@
 	"mbframe.h"
 	"mbcrc.h"
 	"mbport.h"
-	"stepper.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\modbus\tcp\mbtcp.c
 	"stdlib.h"
 	"string.h"
 	"port.h"
@@ -2729,58 +2731,61 @@
 	"mbframe.h"
 	"mbport.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\port.c
 	"port.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portevent.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portevent.c
 	"mb.h"
 	"mbport.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portserial.c
+1541155768 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portserial.c
 	"port.h"
 	"mb.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\porttimer.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\porttimer.c
 	"port.h"
 	"mb.h"
 	"mbport.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\main.c
+1541145016 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\main.c
 	"main.h"
-	"software.h"
+	"unicon.h"
 	"nextion.h"
-
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\inc\software.h
-	"stepper.h"
+	"iic_eeprom.h"
+	"software.h"
 	"mb.h"
 	"user_mb_app.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\software.c
-	"software.h"
-	"M25AAxx.h"
+1541152525 c:\working\git\bandymas_hal_ll\low_layer\core\inc\software.h
+	"defs.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
+1541158191 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\software.c
+	"software.h"
+	"iic_eeprom.h"
+	"user_mb_app.h"
+
+1541147097 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
 	"stm32f0xx.h"
 	"stm32f0xx_it.h"
-	"defs.h"
 	"stm32f0xx_ll_usart.h"
-	"user_mb_app.h"
+	"software.h"
+	"mbport.h"
 
-1539928699 c:\working\git\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_it.h
+1539925099 c:\working\git\bandymas_hal_ll\low_layer\core\inc\stm32f0xx_it.h
 	"stm32f0xx_ll_system.h"
 	"stm32f0xx_ll_gpio.h"
 	"stm32f0xx_ll_exti.h"
 	"main.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\system_stm32f0xx.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\system_stm32f0xx.c
 	"stm32f0xx.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\user_mb_app.c
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\user_mb_app.c
 	"user_mb_app.h"
 
-1539928699 source:c:\working\git\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
+1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
 
-1539942818 source:c:\working\git\bandymas_hal_ll\bsp\hardware.c
+1541147218 source:c:\working\git\bandymas_hal_ll\bsp\hardware.c
 	"hardware.h"
 
 1540772066 d:\projects\bandymas_hal_ll\bsp\comp\l6470\l6470.h
@@ -2793,4 +2798,58 @@
 
 1539882422 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_hal_i2c.c
 	"stm32f0xx_hal.h"
+
+1539925098 source:c:\working\git\bandymas_hal_ll\bsp\board\unicon\unicon.c
+	"unicon.h"
+
+1541138753 c:\working\git\bandymas_hal_ll\bsp\board\unicon\unicon.h
+	"hardware.h"
+
+1541148197 source:c:\working\git\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
+	<stdlib.h>
+	<string.h>
+	"iic_eeprom.h"
+	"iic.h"
+
+1541138753 c:\working\git\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.h
+	<stdint.h>
+
+1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_hal_i2c.c
+	"stm32f0xx_hal.h"
+
+1541147997 source:c:\working\git\bandymas_hal_ll\bsp\hardware\iic.c
+	"iic.h"
+
+1541143901 source:c:\working\git\bandymas_hal_ll\bsp\hardware\rtc.c
+
+1541158218 c:\working\git\bandymas_hal_ll\bsp\hardware\usart.h
+	"defs.h"
+	"main.h"
+
+1541144219 source:c:\working\git\bandymas_hal_ll\bsp\hardware\spi.c
+	"spi.h"
+
+1541145561 c:\working\git\bandymas_hal_ll\bsp\hardware\spi.h
+	"defs.h"
+	"main.h"
+
+1541155752 source:c:\working\git\bandymas_hal_ll\bsp\hardware\usart.c
+	"usart.h"
+
+1541147883 c:\working\git\bandymas_hal_ll\bsp\hardware\iic.h
+	"defs.h"
+	"main.h"
+
+1541144915 c:\working\git\bandymas_hal_ll\bsp\hardware\adc.h
+	"defs.h"
+	"main.h"
+
+1541144915 source:c:\working\git\bandymas_hal_ll\bsp\hardware\adc.c
+	"adc.h"
+
+1541148878 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\delay\delay.c
+	"main.h"
+
+1541148878 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\delay.c
+	"main.h"
 

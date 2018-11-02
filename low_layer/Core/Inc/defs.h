@@ -42,45 +42,21 @@ typedef enum { RES_OK = 0, RES_ERROR, RES_BUSY, RES_TIMEOUT, RES_BAD_PARAMS } eR
 #define     SOUND_LEVEL_DEF             SND_OFF
 #define     WDT_FUNC_DEF                DISABLE
 
-#define     EEADR_INITBYTE              10  // 1 baitas
-#define     EEADR_MBPORTPARAMS          11  // 44 baitu
-#define     EEADR_RTCTIME               56  // 8 baitai
-#define     EEADR_RTCDATE               64  // 4 baitai
+
+/* EEPROM bazinis adresas */
+#define     EEADR_BASE                  10
+
+/* EEPROM adresu offsetai */
+#define     EEADR_INITBYTE              EEADR_BASE+10  // 1 baitas
+#define     EEADR_MBPORTPARAMS          EEADR_BASE+11  // 44 baitai
+#define     EEADR_RTCTIME               EEADR_BASE+56  // 8 baitai
+#define     EEADR_RTCDATE               EEADR_BASE+64  // 4 baitai
 
 
 #define     EE_INITBYTE_DEF             0xAA
 
-/* UART */
-#pragma pack(push, 1)
-typedef struct {
 
-    uint8_t         Uart;
-    uint8_t         ModbusActive;
-
-    struct{
-        uint16_t*   pmbus;      // pointeris i Modbus HR
-        uint8_t     cvalue;     // aktyvi reiksme
-    }MbAddr;
-    struct{
-        uint16_t*   pmbus;      // pointeris i Modbus HR
-        uint8_t     cvalue;      // aktyvi reiksme
-    }Baudrate;
-    struct{
-        uint16_t*   pmbus;      // pointeris i Modbus HR
-        uint8_t     cvalue;     // aktyvi reiksme
-    }Parity;
-    struct{
-        uint16_t*   pmbus;      // pointeris i Modbus HR
-        uint8_t     cvalue;     // aktyvi reiksme
-    }StopBits;
-    struct{
-        uint16_t*   pmbus;      // pointeris i Modbus HR
-        uint8_t     cvalue;     // aktyvi reiksme
-    }DataBits;
-} MbPortParams_TypeDef;
-#pragma pack(pop)
-
-extern MbPortParams_TypeDef MbPortParams;
-
+void SystickDelay_ms(uint32_t delay);
+void Delay_ms(uint32_t delay);
 
 #endif /* DEFS_H_INCLUDED */

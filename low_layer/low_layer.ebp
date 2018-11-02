@@ -108,6 +108,26 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="..\BSP\hardware.h" />
+		<Unit filename="..\BSP\hardware\adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\BSP\hardware\adc.h" />
+		<Unit filename="..\BSP\hardware\iic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\BSP\hardware\iic.h" />
+		<Unit filename="..\BSP\hardware\rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\BSP\hardware\rtc.h" />
+		<Unit filename="..\BSP\hardware\spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\BSP\hardware\spi.h" />
+		<Unit filename="..\BSP\hardware\usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\BSP\hardware\usart.h" />
 		<Unit filename="..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f051x8.h" />
 		<Unit filename="..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h" />
 		<Unit filename="..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h" />
@@ -249,6 +269,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Core\libs\freemodbus\port\porttimer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\Src\delay.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Core\Src\main.c">
