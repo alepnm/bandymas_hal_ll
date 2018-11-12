@@ -6,19 +6,24 @@
 			<Cursor1 position="342" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\board\unicon\unicon.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\board\unicon\unicon.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="79" topLine="0" />
+			<Cursor1 position="92" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\comp\IIC_EEPROM\iic_eeprom.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\board\unicon\unicon.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="213" topLine="0" />
+			<Cursor1 position="232" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\comp\IIC_EEPROM\iic_eeprom.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\comp\IIC_EEPROM\iic_eeprom.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1171" topLine="0" />
+			<Cursor1 position="105" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\BSP\comp\IIC_EEPROM\iic_eeprom.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="217" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="..\BSP\comp\Nextion_HMI\nextion.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -31,54 +36,54 @@
 			<Cursor1 position="1759" topLine="6" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware.c" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="111" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="438" topLine="0" />
+			<Cursor1 position="505" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware\adc.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware\adc.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="826" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware\adc.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware\adc.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="161" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware\iic.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware\iic.c" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="596" topLine="0" />
+			<Cursor1 position="923" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware\iic.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware\iic.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="92" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware\spi.c" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware\spi.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="261" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware\spi.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware\spi.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="143" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware\usart.c" open="1" top="1" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware\usart.c" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2487" topLine="12" />
+			<Cursor1 position="1180" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\BSP\hardware\usart.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\BSP\hardware\usart.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1097" topLine="0" />
+			<Cursor1 position="96" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="..\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f051x8.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -186,19 +191,19 @@
 			<Cursor1 position="8810" topLine="333" />
 		</Cursor>
 	</File>
-	<File name="Core\Inc\defs.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Core\Inc\defs.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="795" topLine="16" />
+			<Cursor1 position="1593" topLine="23" />
 		</Cursor>
 	</File>
-	<File name="Core\Inc\main.h" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Core\Inc\main.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3633" topLine="30" />
+			<Cursor1 position="2621" topLine="27" />
 		</Cursor>
 	</File>
-	<File name="Core\Inc\software.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Core\Inc\software.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="810" topLine="0" />
+			<Cursor1 position="863" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Core\Inc\stm32_assert.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -223,7 +228,7 @@
 	</File>
 	<File name="Core\libs\freemodbus\modbus\functions\mbutils.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2632" topLine="43" />
+			<Cursor1 position="2531" topLine="43" />
 		</Cursor>
 	</File>
 	<File name="Core\libs\freemodbus\modbus\include\mb.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -241,7 +246,7 @@
 			<Cursor1 position="1387" topLine="39" />
 		</Cursor>
 	</File>
-	<File name="Core\libs\freemodbus\modbus\include\mbport.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Core\libs\freemodbus\modbus\include\mbport.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2439" topLine="31" />
 		</Cursor>
@@ -273,7 +278,7 @@
 	</File>
 	<File name="Core\libs\freemodbus\port\portserial.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1821" topLine="28" />
+			<Cursor1 position="1523" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Core\libs\freemodbus\port\porttimer.c" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -281,14 +286,14 @@
 			<Cursor1 position="1872" topLine="31" />
 		</Cursor>
 	</File>
-	<File name="Core\Src\main.c" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Core\Src\main.c" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2482" topLine="27" />
+			<Cursor1 position="2648" topLine="30" />
 		</Cursor>
 	</File>
-	<File name="Core\Src\software.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Core\Src\software.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2899" topLine="67" />
+			<Cursor1 position="410" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Core\Src\stm32f0xx_it.c" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">

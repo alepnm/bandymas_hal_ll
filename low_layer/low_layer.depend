@@ -2116,14 +2116,12 @@
 	"hardware.h"
 	"stm32_assert.h"
 
-1541146849 c:\working\git\bandymas_hal_ll\bsp\hardware.h
+1542020528 c:\working\git\bandymas_hal_ll\bsp\hardware.h
 	"stm32_assert.h"
-	"usart.h"
-	"spi.h"
-	"iic.h"
-	"adc.h"
+	"main.h"
+	"defs.h"
 
-1541146752 c:\working\git\bandymas_hal_ll\low_layer\core\inc\defs.h
+1542019713 c:\working\git\bandymas_hal_ll\low_layer\core\inc\defs.h
 	<stdint.h>
 	<stdbool.h>
 	<string.h>
@@ -2738,9 +2736,10 @@
 	"mb.h"
 	"mbport.h"
 
-1541155768 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portserial.c
+1542019842 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\portserial.c
 	"port.h"
 	"mb.h"
+	"usart.h"
 
 1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\freemodbus\port\porttimer.c
 	"port.h"
@@ -2756,7 +2755,7 @@
 	"mb.h"
 	"user_mb_app.h"
 
-1541152525 c:\working\git\bandymas_hal_ll\low_layer\core\inc\software.h
+1542019264 c:\working\git\bandymas_hal_ll\low_layer\core\inc\software.h
 	"defs.h"
 
 1541158191 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\software.c
@@ -2799,13 +2798,13 @@
 1539882422 source:d:\projects\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_hal_i2c.c
 	"stm32f0xx_hal.h"
 
-1539925098 source:c:\working\git\bandymas_hal_ll\bsp\board\unicon\unicon.c
+1542016297 source:c:\working\git\bandymas_hal_ll\bsp\board\unicon\unicon.c
 	"unicon.h"
 
 1541138753 c:\working\git\bandymas_hal_ll\bsp\board\unicon\unicon.h
 	"hardware.h"
 
-1541148197 source:c:\working\git\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
+1542016092 source:c:\working\git\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
 	<stdlib.h>
 	<string.h>
 	"iic_eeprom.h"
@@ -2817,12 +2816,12 @@
 1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_hal_i2c.c
 	"stm32f0xx_hal.h"
 
-1541147997 source:c:\working\git\bandymas_hal_ll\bsp\hardware\iic.c
+1542015940 source:c:\working\git\bandymas_hal_ll\bsp\hardware\iic.c
 	"iic.h"
 
 1541143901 source:c:\working\git\bandymas_hal_ll\bsp\hardware\rtc.c
 
-1541158218 c:\working\git\bandymas_hal_ll\bsp\hardware\usart.h
+1542019713 c:\working\git\bandymas_hal_ll\bsp\hardware\usart.h
 	"defs.h"
 	"main.h"
 
@@ -2833,8 +2832,9 @@
 	"defs.h"
 	"main.h"
 
-1541155752 source:c:\working\git\bandymas_hal_ll\bsp\hardware\usart.c
+1541164680 source:c:\working\git\bandymas_hal_ll\bsp\hardware\usart.c
 	"usart.h"
+	"mbport.h"
 
 1541147883 c:\working\git\bandymas_hal_ll\bsp\hardware\iic.h
 	"defs.h"

@@ -30,6 +30,40 @@ typedef uint8_t byte;
 
 typedef enum { RES_OK = 0, RES_ERROR, RES_BUSY, RES_TIMEOUT, RES_BAD_PARAMS } eRESULT_TypeDef;  // atitinka HAL_StatusTypeDef
 
+
+/* UART */
+#pragma pack(push, 1)
+typedef struct {
+
+    uint8_t         Uart;
+    uint8_t         ModbusActive;
+
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;     // aktyvi reiksme
+    }MbAddr;
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;      // aktyvi reiksme
+    }Baudrate;
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;     // aktyvi reiksme
+    }Parity;
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;     // aktyvi reiksme
+    }StopBits;
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;     // aktyvi reiksme
+    }DataBits;
+} MbPortParams_TypeDef;
+#pragma pack(pop)
+
+extern MbPortParams_TypeDef MbPortParams;
+
+
 /*  SYSTEM DEFAULTS */
 #define     MODBUS_ENABLE
 
