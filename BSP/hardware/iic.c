@@ -1,3 +1,4 @@
+#include "main.h"
 #include "iic.h"
 
 #define     I2C_WRITE 0
@@ -26,7 +27,7 @@ uint8_t IIC_Check(uint8_t iic_addr) {
 }
 
 /* galima rasyti iki 254 baitu! */
-uint8_t IIC_Write(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len) {
+uint8_t IIC_Write(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint8_t len) {
 
     uint8_t wr_cnt = 0, tmp = 0;
 
@@ -59,12 +60,12 @@ uint8_t IIC_Write(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len) {
 
     }while(len > 0);
 
-    return 0;
+    return I2C_OK;
 }
 
 
 /*  */
-uint8_t IIC_Read(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len) {
+uint8_t IIC_Read(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint8_t len) {
 
     LL_I2C_ClearFlag_STOP(I2C1);
 
@@ -86,7 +87,7 @@ uint8_t IIC_Read(uint8_t iic_addr, uint16_t reg, uint8_t *buf, uint16_t len) {
 
     LL_I2C_ClearFlag_STOP(I2C1);
 
-    return 0;
+    return I2C_OK;
 }
 
 

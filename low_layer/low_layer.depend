@@ -2116,7 +2116,7 @@
 	"hardware.h"
 	"stm32_assert.h"
 
-1542020528 c:\working\git\bandymas_hal_ll\bsp\hardware.h
+1542888083 c:\working\git\bandymas_hal_ll\bsp\hardware.h
 	"stm32_assert.h"
 	"main.h"
 	"defs.h"
@@ -2763,10 +2763,9 @@
 	"iic_eeprom.h"
 	"user_mb_app.h"
 
-1541147097 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
+1542888016 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\stm32f0xx_it.c
 	"stm32f0xx.h"
 	"stm32f0xx_it.h"
-	"stm32f0xx_ll_usart.h"
 	"software.h"
 	"mbport.h"
 
@@ -2784,8 +2783,9 @@
 
 1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
 
-1541147218 source:c:\working\git\bandymas_hal_ll\bsp\hardware.c
+1542867280 source:c:\working\git\bandymas_hal_ll\bsp\hardware.c
 	"hardware.h"
+	"adc.h"
 
 1540772066 d:\projects\bandymas_hal_ll\bsp\comp\l6470\l6470.h
 
@@ -2816,35 +2816,37 @@
 1539925098 source:c:\working\git\bandymas_hal_ll\drivers\stm32f0xx_hal_driver\src\stm32f0xx_hal_i2c.c
 	"stm32f0xx_hal.h"
 
-1542015940 source:c:\working\git\bandymas_hal_ll\bsp\hardware\iic.c
+1542798916 source:c:\working\git\bandymas_hal_ll\bsp\hardware\iic.c
+	"main.h"
 	"iic.h"
 
-1541143901 source:c:\working\git\bandymas_hal_ll\bsp\hardware\rtc.c
-
-1542019713 c:\working\git\bandymas_hal_ll\bsp\hardware\usart.h
-	"defs.h"
+1542800265 source:c:\working\git\bandymas_hal_ll\bsp\hardware\rtc.c
 	"main.h"
+	"rtc.h"
 
-1541144219 source:c:\working\git\bandymas_hal_ll\bsp\hardware\spi.c
+1542887645 c:\working\git\bandymas_hal_ll\bsp\hardware\usart.h
+	"defs.h"
+
+1542798936 source:c:\working\git\bandymas_hal_ll\bsp\hardware\spi.c
+	"main.h"
 	"spi.h"
 
-1541145561 c:\working\git\bandymas_hal_ll\bsp\hardware\spi.h
+1542798936 c:\working\git\bandymas_hal_ll\bsp\hardware\spi.h
 	"defs.h"
-	"main.h"
 
-1541164680 source:c:\working\git\bandymas_hal_ll\bsp\hardware\usart.c
+1542887805 source:c:\working\git\bandymas_hal_ll\bsp\hardware\usart.c
+	"main.h"
 	"usart.h"
 	"mbport.h"
 
-1541147883 c:\working\git\bandymas_hal_ll\bsp\hardware\iic.h
+1542798916 c:\working\git\bandymas_hal_ll\bsp\hardware\iic.h
 	"defs.h"
-	"main.h"
 
-1541144915 c:\working\git\bandymas_hal_ll\bsp\hardware\adc.h
+1542868161 c:\working\git\bandymas_hal_ll\bsp\hardware\adc.h
 	"defs.h"
-	"main.h"
 
-1541144915 source:c:\working\git\bandymas_hal_ll\bsp\hardware\adc.c
+1542887251 source:c:\working\git\bandymas_hal_ll\bsp\hardware\adc.c
+	"main.h"
 	"adc.h"
 
 1541148878 source:c:\working\git\bandymas_hal_ll\low_layer\core\libs\delay\delay.c
@@ -2852,4 +2854,7 @@
 
 1541148878 source:c:\working\git\bandymas_hal_ll\low_layer\core\src\delay.c
 	"main.h"
+
+1542800280 c:\working\git\bandymas_hal_ll\bsp\hardware\rtc.h
+	"defs.h"
 

@@ -2,7 +2,12 @@
 #define USART_H_INCLUDED
 
 #include "defs.h"
-#include "main.h"
+
+
+enum { BR2400 = 0, BR4800, BR9600, BR19200, BR38400, BR57600 };
+
+extern USART_TypeDef* ports[];
+extern const uint32_t baudrates[];
 
 
 void    USART_Config(uint8_t ucPORT, uint32_t ulBaudRate, uint32_t ulDataBits,  uint32_t ulParity );

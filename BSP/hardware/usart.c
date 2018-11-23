@@ -1,3 +1,4 @@
+#include "main.h"
 #include "usart.h"
 #include "mbport.h"
 
@@ -7,11 +8,9 @@
 
 USART_TypeDef* ports[3u] = {USART1, NULL, NULL};
 
-enum { BR2400 = 0, BR4800, BR9600, BR19200, BR38400, BR57600 };
 const uint32_t baudrates[6u] = { 2400u, 4800u, 9600u, 19200u, 38400u, 57600u };
 
 
-uint32_t    Usart_ConfigRegister;
 /*
      0-15 - Baudrate
     16-17 - Parity
@@ -20,6 +19,9 @@ uint32_t    Usart_ConfigRegister;
     23-25 - baudreito indeksas is bodreitu masyvo
     26-27 - naudojamo USART porto numeris
 */
+uint32_t    Usart_ConfigRegister;
+
+
 
 #define USART_BAUDRATE_MSK          0b00000000000000001111111111111111
 #define USART_PARITY_MSK            0b00000000000000110000000000000000

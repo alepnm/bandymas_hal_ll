@@ -35,8 +35,6 @@
 #include "stm32f0xx_it.h"
 
 /* USER CODE BEGIN 0 */
-//#include "defs.h"
-#include "stm32f0xx_ll_usart.h"
 #include "software.h"
 #include "mbport.h"
 /* External variables --------------------------------------------------------*/
@@ -180,10 +178,10 @@ void USART1_IRQHandler(void)
 #if defined(MODBUS_ENABLE)
         (void)pxMBFrameCBByteReceived();
         return;
-#endif
+#elif
         RxByte = LL_USART_ReceiveData8(USART1);
-
         UsartState = 1;
+#endif
     }
 
     if( LL_USART_IsActiveFlag_TC(USART1) && LL_USART_IsEnabledIT_TC(USART1) ) {
@@ -191,12 +189,11 @@ void USART1_IRQHandler(void)
 #if defined(MODBUS_ENABLE)
         (void)pxMBFrameCBTransmitterEmpty();
         return;
-#endif
+#elif
         LL_USART_ClearFlag_TC(USART1);
-
         LL_USART_DisableIT_TC(USART1);
-
         UsartState = 0;
+#endif
     }
 
 
