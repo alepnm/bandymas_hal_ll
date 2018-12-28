@@ -1,0 +1,50 @@
+
+hwport.c
+    #include "hwport.h"
+
+    /* low-level HW draiveriai ( HAL/LL/... ). Priklauso nuo naudojamo porto
+        STM8/STM32/Cypress/Atmel/......
+
+        tiesioginis darbas su portais, taimeriais, ADC, IIC, SPI, UART ir t.t.
+    */
+
+
+
+hardware.c
+    #include "hardware.h"
+    #include "hwport.h"
+
+    #include "io.h"
+    #include "iieeprom.h"
+    #include "usart.h"
+    #include "spi.h"
+    #include "softspi.h"
+    #include "timer.h"
+    #include "pwm.h"
+    #include "somebody.h"
+
+
+    /* HW funkcijos nepriklausomos nuo porto (pilnas funkcionalumas). Funkcijos
+        suskirstytos pagal HW tipa
+
+        rysio protokolai ir t.t.
+    */
+
+
+
+software.c
+    #include "hardware.h"
+
+    /* Bendro naudojimo SW funkcijos */
+
+
+
+
+xboard.c
+    #include "xboard.h"
+    #include "hardware.h"
+    #include "hwport.h"
+
+    /* konkrecios plokstes funkcionalumas (tik naudojamo HW funkcionalumas)
+    hardware.c trumpa versija */
+

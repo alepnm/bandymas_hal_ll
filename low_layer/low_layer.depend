@@ -2116,7 +2116,7 @@
 	"hardware.h"
 	"stm32_assert.h"
 
-1542888083 c:\working\git\bandymas_hal_ll\bsp\hardware.h
+1545920897 c:\working\git\bandymas_hal_ll\bsp\hardware.h
 	"stm32_assert.h"
 	"main.h"
 	"defs.h"
@@ -2783,7 +2783,7 @@
 
 1539925099 source:c:\working\git\bandymas_hal_ll\low_layer\startup\startup_stm32f0xx.s
 
-1542867280 source:c:\working\git\bandymas_hal_ll\bsp\hardware.c
+1545920897 source:c:\working\git\bandymas_hal_ll\bsp\hardware.c
 	"hardware.h"
 	"adc.h"
 
@@ -2801,10 +2801,11 @@
 1542016297 source:c:\working\git\bandymas_hal_ll\bsp\board\unicon\unicon.c
 	"unicon.h"
 
-1541138753 c:\working\git\bandymas_hal_ll\bsp\board\unicon\unicon.h
+1545922241 c:\working\git\bandymas_hal_ll\bsp\board\unicon\unicon.h
 	"hardware.h"
+	"iic_eeprom.h"
 
-1542016092 source:c:\working\git\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
+1545922142 source:c:\working\git\bandymas_hal_ll\bsp\comp\iic_eeprom\iic_eeprom.c
 	<stdlib.h>
 	<string.h>
 	"iic_eeprom.h"

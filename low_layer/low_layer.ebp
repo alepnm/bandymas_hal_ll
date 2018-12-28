@@ -289,6 +289,7 @@
 		<Unit filename="Core\Src\user_mb_app.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="headers.txt" />
 		<Unit filename="startup\startup_stm32f0xx.S">
 			<Option compilerVar="CC" />
 		</Unit>
