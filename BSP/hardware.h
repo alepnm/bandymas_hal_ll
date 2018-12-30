@@ -3,7 +3,6 @@
 
 #include "stm32_assert.h"
 #include "main.h"
-#include "defs.h"
 
 #define     __enter_critical() {uint32_t irq; irq = __get_PRIMASK();
 #define     __exit_critical() __set_PRIMASK(irq);}

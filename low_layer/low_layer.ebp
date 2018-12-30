@@ -116,6 +116,11 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="..\BSP\hardware\iic.h" />
+		<Unit filename="..\BSP\hardware\io.h" />
+		<Unit filename="..\BSP\hardware\pwm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\BSP\hardware\pwm.h" />
 		<Unit filename="..\BSP\hardware\rtc.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -124,6 +129,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="..\BSP\hardware\spi.h" />
+		<Unit filename="..\BSP\hardware\tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\BSP\hardware\tim.h" />
 		<Unit filename="..\BSP\hardware\usart.c">
 			<Option compilerVar="CC" />
 		</Unit>

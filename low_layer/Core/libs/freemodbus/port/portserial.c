@@ -23,6 +23,7 @@
 /* ----------------------- Modbus includes ----------------------------------*/
 #include "mb.h"
 #include "usart.h"
+#include "user_mb_app.h"
 
 extern USART_TypeDef* ports[];
 /* ----------------------- static functions ---------------------------------*/

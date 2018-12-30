@@ -35,14 +35,11 @@
 #include "stm32f0xx_it.h"
 
 /* USER CODE BEGIN 0 */
+#include "usart.h"
 #include "software.h"
 #include "mbport.h"
 /* External variables --------------------------------------------------------*/
 volatile uint32_t timestamp = 0;
-
-
-extern uint8_t UsartState;
-extern uint8_t RxByte;
 
 
 extern void STP_TimerEnableChannel(TIM_TypeDef* TIMx, uint32_t Channel);
@@ -173,31 +170,7 @@ void TIM6_DAC_IRQHandler(void)
 void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
-    if( LL_USART_IsActiveFlag_RXNE(USART1) && LL_USART_IsEnabledIT_RXNE(USART1) ) {
-
-#if defined(MODBUS_ENABLE)
-        (void)pxMBFrameCBByteReceived();
-        return;
-#elif
-        RxByte = LL_USART_ReceiveData8(USART1);
-        UsartState = 1;
-#endif
-    }
-
-    if( LL_USART_IsActiveFlag_TC(USART1) && LL_USART_IsEnabledIT_TC(USART1) ) {
-
-#if defined(MODBUS_ENABLE)
-        (void)pxMBFrameCBTransmitterEmpty();
-        return;
-#elif
-        LL_USART_ClearFlag_TC(USART1);
-        LL_USART_DisableIT_TC(USART1);
-        UsartState = 0;
-#endif
-    }
-
-
-
+    USART_IRQ_Handler();
   /* USER CODE END USART1_IRQn 0 */
   /* USER CODE BEGIN USART1_IRQn 1 */
 

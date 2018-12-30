@@ -16,6 +16,47 @@
 #include "mb.h"
 #include "mbconfig.h"
 
+
+/* UART */
+#pragma pack(push, 1)
+typedef struct {
+
+    uint8_t         Uart;
+    uint8_t         ModbusActive;
+
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;     // aktyvi reiksme
+    }MbAddr;
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;      // aktyvi reiksme
+    }Baudrate;
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;     // aktyvi reiksme
+    }Parity;
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;     // aktyvi reiksme
+    }StopBits;
+    struct{
+        uint16_t*   pmbus;      // pointeris i Modbus HR
+        uint8_t     cvalue;     // aktyvi reiksme
+    }DataBits;
+} MbPortParams_TypeDef;
+#pragma pack(pop)
+
+extern MbPortParams_TypeDef MbPortParams;
+
+
+#define     MB_PORT_DEF                 ( 0u )
+#define     MBADDR_DEF                  ( 10u )     //0x0A
+#define     MBPARITY_DEF                MB_PAR_NONE
+#define     MBBAURATE_DEF               ( 3u )      // bodreito indeksas lenteleje ( 3->19200 )
+#define     MBSTOPBITS_DEF              ( 1u )
+#define     MBWORDLENGHT_DEF            ( 8u )
+
 /* -----------------------Slave Defines -------------------------------------*/
 #define     DISCRETE_INPUT_START        0
 #define     DISCRETE_INPUT_NDISCRETES   32

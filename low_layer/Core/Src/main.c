@@ -41,8 +41,6 @@
 
 /* USER CODE BEGIN Includes */
 #include "unicon.h"
-#include "nextion.h"
-#include "iic_eeprom.h"
 #include "software.h"
 
 #include "mb.h"
@@ -65,12 +63,12 @@ MbPortParams_TypeDef MbPortParams = {
     .Parity = { .pmbus = &usRegHoldingBuf[HR_MBPARITY], .cvalue = MBPARITY_DEF },
     .StopBits = { .pmbus = &usRegHoldingBuf[HR_MBSTOPBITS], .cvalue = MBSTOPBITS_DEF },
     .DataBits  = { .pmbus = NULL, .cvalue = MBWORDLENGHT_DEF }
-};
+}, qqq;
 
 
-uint8_t UsartState = 0; // 0-IDLE, 1-RXNE, 2-TC
-uint8_t RxByte;
-uint8_t HMI_CommandBuffer[30];
+extern uint8_t UsartState; // 0-IDLE, 1-RXNE, 2-TC
+extern uint8_t RxByte;
+char HMI_CommandBuffer[30] = "123456789GASDFG";
 
 /* EXTERNS -------------------------------------------------------------------*/
 extern volatile uint32_t timestamp;
@@ -117,7 +115,6 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
     static volatile uint32_t delay = 0;
-    static uint8_t i = 0;
 
   /* USER CODE END 1 */
 
@@ -156,6 +153,11 @@ int main(void)
     //EEP24XX_Clear();
     EEP24XX_Read( 0, iic_buf, I2C_MEMORY_SIZE );
 
+    //EEP24XX_Write( 256, &MbPortParams, sizeof(MbPortParams) );
+
+    //EEP24XX_Read( 256, &qqq, sizeof(MbPortParams) );
+
+
     SW_SystemStart();
 
   /* USER CODE END 2 */
@@ -169,42 +171,13 @@ int main(void)
 
             delay = timestamp + 500;
 
-            RTC_Time.Seconds = LL_RTC_TIME_GetSecond(RTC);
-            rtc_second = __LL_RTC_GET_SECOND(RTC_Time.Seconds);
+            LED2_ON();
 
-            RTC_Time.Minutes = LL_RTC_TIME_GetMinute(RTC);
-            rtc_minute = __LL_RTC_GET_MINUTE(RTC_Time.Minutes);
+            //USART_SendByte(0x55);
+            //USART_SendString(HMI_CommandBuffer);
 
-            RTC_Time.Hours = LL_RTC_TIME_GetHour(RTC);
-            rtc_hour = __LL_RTC_GET_HOUR(RTC_Time.Hours);
+            USART_Send(&MbPortParams, sizeof(MbPortParams));
 
-            //EEP24XX_Write( EEADR_RTCDATA, (uint8_t*)&RTC_Time, sizeof(RTC_Time) );
-
-            LED2_TOGGLE();
-        }
-
-
-
-        if(UsartState == 1){
-
-            UsartState = 0;
-
-            HMI_CommandBuffer[i] = RxByte;
-
-            if(HMI_CommandBuffer[i-2] ==  0xFF && HMI_CommandBuffer[i-1] == 0xFF && HMI_CommandBuffer[i] == 0xFF){
-
-                Nextion_DataProcess(HMI_CommandBuffer);  // jai tris 0xFF is eiles, komandos pabaiga
-
-                do{
-                    HMI_CommandBuffer[i] = 0;
-                }while(i-- > 0);
-
-            }else{
-                i++;
-            }
-
-//            LL_USART_TransmitData8(USART1, RxByte);
-//            LL_USART_EnableIT_TC(USART1);
         }
 
 

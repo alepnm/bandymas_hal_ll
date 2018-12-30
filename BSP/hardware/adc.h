@@ -1,14 +1,11 @@
 #ifndef ADC_H_INCLUDED
 #define ADC_H_INCLUDED
 
-#include "defs.h"
-
 typedef struct{
     uint32_t    AdcVal;
     uint32_t    ConvertedValue;
     uint32_t    Resolution;
 }ADC_IntRegister_TypeDef;
-
 
 typedef struct {
    ADC_IntRegister_TypeDef VRefInt;
